@@ -1,0 +1,76 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2026-08-13T06:09:17.273Z",
+  "updatedAt": "2026-08-13T06:09:17.273Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "291d4f10-b821-4f06-a7d8-73e840190ef3",
+  "version": "draft",
+  "name": "snfOLD",
+  "commitId": "commit-f3ef4959-cba3-4cdd-b804-f4f5cdf221c1",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-08-13 06:09:17",
+   "timeStamp": "2026-08-13T06:09:17.273253405Z"
+  },
+  "fields": {
+   "DEPT_ID": {
+ "ColumnName": "DEPT_ID",
+ "DataType": "numeric",
+ "Order": 1,
+ "ExecutedValue": null
+},
+   "DEPT_NAME": {
+ "ColumnName": "DEPT_NAME",
+ "DataType": "string",
+ "Order": 2,
+ "ExecutedValue": null
+},
+   "LOCATION": {
+ "ColumnName": "LOCATION",
+ "DataType": "string",
+ "Order": 3,
+ "ExecutedValue": null
+},
+   "MANAGER_ID": {
+ "ColumnName": "MANAGER_ID",
+ "DataType": "numeric",
+ "Order": 4,
+ "ExecutedValue": null
+}
+  },
+  "description": "",
+  "query": "select * from PUBLIC.DEPARTMENTS;",
+  "params": null,
+  "connectorId": "c5399600-68e2-41ac-b407-e6eef9f18d1a",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "Africa/Accra",
+   "dateFormat": "us"
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-13T06:09:17.27617Z",
+   "updatedAt": "2026-08-13T06:09:17.27617Z",
+   "entityCommitId": "commit-f3ef4959-cba3-4cdd-b804-f4f5cdf221c1",
+   "entityType": "dataSet",
+   "entityId": "291d4f10-b821-4f06-a7d8-73e840190ef3",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "c5399600-68e2-41ac-b407-e6eef9f18d1a",
+   "dependencyVersion": "live"
+  }
+ ]
+}

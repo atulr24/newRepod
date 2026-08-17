@@ -1,0 +1,1493 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2026-08-06T05:42:09.042Z",
+  "updatedAt": "2026-08-10T05:06:07.775327Z",
+  "isDeleted": false,
+  "testedAt": "2026-08-06T13:22:11.108Z",
+  "publishedAt": "2026-08-06T13:22:20.88Z",
+  "entityId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+  "version": "draft",
+  "name": "DTv0",
+  "commitId": "commit-fbcfd515-7d29-4051-94a3-e9c8c763ed26",
+  "status": "draft",
+  "lastVersion": "0.50",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Forked from 0.50",
+   "timeStamp": "2026-08-06T13:22:23.85320358Z"
+  },
+  "customInput": {
+   "NameEd": {
+ "name": "NameEd",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "name",
+ "sourceType": "dataSet",
+ "executedValue": "Ravi Kumars",
+ "config": {
+  
+ },
+ "value": "",
+ "next": "api",
+ "previous": "",
+ "schemaId": ""
+},
+   "api": {
+ "name": "api",
+ "dataType": "restAPI",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "978b6345-4b48-4dc3-a5ed-6aae40767916",
+ "sourceType": "restAPI",
+ "executedValue": {
+  "Body": {
+ "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
+ "id": 3,
+ "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+ "userId": 1
+},
+  "Headers": {
+ "Access-Control-Allow-Credentials": "true",
+ "Age": "26153",
+ "Alt-Svc": "h3=\":443\"; ma=86400",
+ "Cache-Control": "max-age=43200",
+ "Cf-Cache-Status": "HIT",
+ "Cf-Ray": "a26dadd2bfa53e46-BOM",
+ "Content-Type": "application/json; charset=utf-8",
+ "Date": "Thu, 06 Aug 2026 11:25:06 GMT",
+ "Etag": "W/\"11b-USacuIw5a/iXAGdNKBvqr/TbMTc\"",
+ "Expires": "-1",
+ "Nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+ "Pragma": "no-cache",
+ "Report-To": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=2yYkXgEG%2FHejDTl33jsEtT4mfXU5Y91poqHrr45XYVc%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785936190\"}],\"max_age\":3600}",
+ "Reporting-Endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=2yYkXgEG%2FHejDTl33jsEtT4mfXU5Y91poqHrr45XYVc%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1785936190\"",
+ "Server": "cloudflare",
+ "Server-Timing": "cfCacheStatus;desc=\"HIT\",cfEdge;dur=5,cfOrigin;dur=0",
+ "Vary": "Origin, Accept-Encoding",
+ "Via": "2.0 heroku-router",
+ "X-Content-Type-Options": "nosniff",
+ "X-Powered-By": "Express",
+ "X-Ratelimit-Limit": "1000",
+ "X-Ratelimit-Remaining": "758",
+ "X-Ratelimit-Reset": "1785936204"
+},
+  "StatusCode": 200,
+  "error": ""
+ },
+ "config": {
+  "body": null,
+  "bodyParams": null,
+  "contentType": "",
+  "headers": [],
+  "method": "GET",
+  "path": "",
+  "query": "",
+  "queryParams": [],
+  "settings": {
+ "cache": {
+ "cacheKeys": "",
+ "duration": {
+ "unit": "d",
+ "value": 0
+},
+ "enabled": false
+}
+}
+ },
+ "value": "",
+ "next": "",
+ "previous": "NameEd",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    "g_AoskGl": {
+ "nextId": "g_uj2Uty",
+ "prevId": "g_NyjNn9",
+ "firstOutputData": "output_y1JyQH",
+ "isEnabled": true,
+ "annotation": ""
+},
+    "g_Fr3xVO": {
+ "nextId": "g_KgYUo3",
+ "prevId": "g_MU5o72",
+ "firstOutputData": "output_SPPI8F",
+ "isEnabled": true,
+ "annotation": ""
+},
+    "g_KgYUo3": {
+ "nextId": "g_NyjNn9",
+ "prevId": "g_Fr3xVO",
+ "firstOutputData": "output_ebKt9n",
+ "isEnabled": true,
+ "annotation": ""
+},
+    "g_MU5o72": {
+ "nextId": "g_Fr3xVO",
+ "prevId": "rule_01",
+ "firstOutputData": "output_2dVV3B",
+ "isEnabled": true,
+ "annotation": ""
+},
+    "g_NyjNn9": {
+ "nextId": "g_AoskGl",
+ "prevId": "g_KgYUo3",
+ "firstOutputData": "output_i4M2Zr",
+ "isEnabled": true,
+ "annotation": ""
+},
+    "g_uj2Uty": {
+ "nextId": "",
+ "prevId": "g_AoskGl",
+ "firstOutputData": "output_ou7kOU",
+ "isEnabled": true,
+ "annotation": ""
+},
+    "rule_01": {
+ "nextId": "g_MU5o72",
+ "prevId": "",
+ "firstOutputData": "output_oOFKQm",
+ "isEnabled": true,
+ "annotation": ""
+}
+   },
+   "properties": {
+    "rule_03": {
+ "nextId": "",
+ "prevId": "",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "result_0iTepf": {
+ "nextId": "result_nQJH2h",
+ "prevId": "result_hBgWLe",
+ "dataType": "dateTime",
+ "keyName": "dateTime",
+ "schemaId": ""
+},
+    "result_3kFeMw": {
+ "nextId": "",
+ "prevId": "result_rxqphM",
+ "dataType": "jsFormula",
+ "keyName": "jsCode",
+ "schemaId": ""
+},
+    "result_CQsthF": {
+ "nextId": "result_midgou",
+ "prevId": "",
+ "dataType": "string",
+ "keyName": "String",
+ "schemaId": ""
+},
+    "result_LJcqq4": {
+ "nextId": "result_hBgWLe",
+ "prevId": "result_midgou",
+ "dataType": "boolean",
+ "keyName": "bool",
+ "schemaId": ""
+},
+    "result_hBgWLe": {
+ "nextId": "result_0iTepf",
+ "prevId": "result_LJcqq4",
+ "dataType": "date",
+ "keyName": "date",
+ "schemaId": ""
+},
+    "result_midgou": {
+ "nextId": "result_LJcqq4",
+ "prevId": "result_CQsthF",
+ "dataType": "numeric",
+ "keyName": "numeric",
+ "schemaId": ""
+},
+    "result_nQJH2h": {
+ "nextId": "result_rxqphM",
+ "prevId": "result_0iTepf",
+ "dataType": "list",
+ "keyName": "list",
+ "schemaId": ""
+},
+    "result_rxqphM": {
+ "nextId": "result_3kFeMw",
+ "prevId": "result_nQJH2h",
+ "dataType": "json",
+ "keyName": "json",
+ "schemaId": ""
+}
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03",
+   "firstResult": "result_CQsthF",
+   "firstAggOutputData": "aggData_string"
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "aggData_string": {
+ "name": "string",
+ "dataType": "string",
+ "returnType": "",
+ "value": "lorem",
+ "next": "",
+ "executedValue": "lorem",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_00iWPc": {
+ "name": "numeric",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 0,
+ "next": "output_WoHShL",
+ "executedValue": 0,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_0FuhMW": {
+ "name": "list",
+ "dataType": "list",
+ "returnType": "",
+ "value": [],
+ "next": "output_7y4lhG",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_1Hur4U": {
+ "name": "date",
+ "dataType": "date",
+ "returnType": "",
+ "value": null,
+ "next": "output_WZkNmK",
+ "executedValue": "",
+ "attribute": "globalDate",
+ "source": "globalVar",
+ "schemaId": ""
+},
+     "output_2dVV3B": {
+ "name": "String",
+ "dataType": "string",
+ "returnType": "",
+ "value": null,
+ "next": "output_dMEt36",
+ "executedValue": "",
+ "attribute": "NameGlobal",
+ "source": "globalVar",
+ "schemaId": ""
+},
+     "output_2mPYtR": {
+ "name": "dateTime",
+ "dataType": "dateTime",
+ "returnType": "",
+ "value": "2026-08-06T14:19:04+05:30",
+ "next": "output_0FuhMW",
+ "executedValue": "2026-08-06T14:19:04+05:30",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_4wLrhC": {
+ "name": "json",
+ "dataType": "json",
+ "returnType": "",
+ "value": null,
+ "next": "output_xFgZ4r",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_7y4lhG": {
+ "name": "json",
+ "dataType": "json",
+ "returnType": "",
+ "value": null,
+ "next": "output_rPVweQ",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_A83J2r": {
+ "name": "list",
+ "dataType": "list",
+ "returnType": "",
+ "value": "[\"qwe\"]",
+ "next": "output_PeunLm",
+ "executedValue": [
+  "qwe"
+ ],
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_CjoxN0": {
+ "name": "date",
+ "dataType": "date",
+ "returnType": "",
+ "value": "2026-08-06",
+ "next": "output_2mPYtR",
+ "executedValue": "2026-08-06",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_FGBYUV": {
+ "name": "bool",
+ "dataType": "boolean",
+ "returnType": "",
+ "value": false,
+ "next": "output_VMg1B9",
+ "executedValue": false,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_HM2JiZ": {
+ "name": "numeric",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 0,
+ "next": "output_LYXRrN",
+ "executedValue": 0,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_Krq5FU": {
+ "name": "jsCode",
+ "dataType": "jsFormula",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_LYXRrN": {
+ "name": "bool",
+ "dataType": "boolean",
+ "returnType": "",
+ "value": false,
+ "next": "output_gttHEf",
+ "executedValue": false,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_LfX6ph": {
+ "name": "numeric",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 11,
+ "next": "output_rLZVUd",
+ "executedValue": 11,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_LhNMwp": {
+ "name": "list",
+ "dataType": "list",
+ "returnType": "",
+ "value": [],
+ "next": "output_YUsdKT",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_PeunLm": {
+ "name": "json",
+ "dataType": "json",
+ "returnType": "",
+ "value": null,
+ "next": "output_Krq5FU",
+ "executedValue": "",
+ "attribute": "fsd",
+ "source": "globalVar",
+ "schemaId": ""
+},
+     "output_Q55p1b": {
+ "name": "dateTime",
+ "dataType": "dateTime",
+ "returnType": "",
+ "value": "2026-08-06T12:16:44+05:30",
+ "next": "output_sYuAi0",
+ "executedValue": "2026-08-06T12:16:44+05:30",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_SJJGSg": {
+ "name": "json",
+ "dataType": "json",
+ "returnType": "",
+ "value": "{\"update\":2}",
+ "next": "output_zD9YeZ",
+ "executedValue": {
+  "update": 2
+ },
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_SPPI8F": {
+ "name": "String",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Valuejkjjjkkassa asjkd jkasdjkd sdksd sdjks sdjksd sdjksd sdjksd sdjkjkjjjkbnbnb",
+ "next": "output_HM2JiZ",
+ "executedValue": "Valuejkjjjkkassa asjkd jkasdjkd sdksd sdjks sdjksd sdjksd sdjksd sdjkjkjjjkbnbnb",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_T4hOQx": {
+ "name": "bool",
+ "dataType": "boolean",
+ "returnType": "",
+ "value": false,
+ "next": "output_TWOqLV",
+ "executedValue": false,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_TWOqLV": {
+ "name": "date",
+ "dataType": "date",
+ "returnType": "",
+ "value": "2026-08-06",
+ "next": "output_eExRCf",
+ "executedValue": "2026-08-06",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_VEk6Ns": {
+ "name": "jsCode",
+ "dataType": "jsFormula",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_VMg1B9": {
+ "name": "date",
+ "dataType": "date",
+ "returnType": "",
+ "value": "2026-08-06",
+ "next": "output_ijxTJv",
+ "executedValue": "2026-08-06",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_WZkNmK": {
+ "name": "dateTime",
+ "dataType": "dateTime",
+ "returnType": "",
+ "value": "2026-08-06T11:45:14+05:30",
+ "next": "output_XYGgLD",
+ "executedValue": "2026-08-06T11:45:14+05:30",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_WoHShL": {
+ "name": "bool",
+ "dataType": "boolean",
+ "returnType": "",
+ "value": false,
+ "next": "output_CjoxN0",
+ "executedValue": false,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_XYGgLD": {
+ "name": "list",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_SJJGSg",
+ "executedValue": "",
+ "attribute": "sdf",
+ "source": "globalVar",
+ "schemaId": ""
+},
+     "output_YJZV8Y": {
+ "name": "bool",
+ "dataType": "boolean",
+ "returnType": "",
+ "value": false,
+ "next": "output_p4tu1k",
+ "executedValue": false,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_YUsdKT": {
+ "name": "json",
+ "dataType": "json",
+ "returnType": "",
+ "value": null,
+ "next": "output_ZNo5Np",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_YfUvM8": {
+ "name": "json",
+ "dataType": "json",
+ "returnType": "",
+ "value": "{\"nn\":7}",
+ "next": "output_bEqenK",
+ "executedValue": {
+  "nn": 7
+ },
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_Z6DJ92": {
+ "name": "list",
+ "dataType": "list",
+ "returnType": "",
+ "value": "[1,2,3,4,5,6,7]",
+ "next": "output_YfUvM8",
+ "executedValue": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_ZIAT00": {
+ "name": "date",
+ "dataType": "date",
+ "returnType": "",
+ "value": "2026-08-06",
+ "next": "output_hHpcVc",
+ "executedValue": "2026-08-06",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_ZNo5Np": {
+ "name": "jsCode",
+ "dataType": "jsFormula",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_Zgt3WJ": {
+ "name": "json",
+ "dataType": "json",
+ "returnType": "",
+ "value": null,
+ "next": "output_VEk6Ns",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_b4j43o": {
+ "name": "dateTime",
+ "dataType": "dateTime",
+ "returnType": "",
+ "value": "2026-08-06T12:01:16+05:30",
+ "next": "output_A83J2r",
+ "executedValue": "2026-08-06T12:01:16+05:30",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_bEqenK": {
+ "name": "jsCode",
+ "dataType": "jsFormula",
+ "returnType": "string",
+ "value": "var a =\n  \"y\";a;",
+ "next": "",
+ "executedValue": "y",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_dMEt36": {
+ "name": "numeric",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": null,
+ "next": "output_xnim1A",
+ "executedValue": "",
+ "attribute": "asd",
+ "source": "globalVar",
+ "schemaId": ""
+},
+     "output_eExRCf": {
+ "name": "dateTime",
+ "dataType": "dateTime",
+ "returnType": "",
+ "value": "2026-08-06T12:20:03+05:30",
+ "next": "output_fB3DB7",
+ "executedValue": "2026-08-06T12:20:03+05:30",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_ebKt9n": {
+ "name": "String",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Valuebn",
+ "next": "output_v01RVM",
+ "executedValue": "Valuebn",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_fB3DB7": {
+ "name": "list",
+ "dataType": "list",
+ "returnType": "",
+ "value": [],
+ "next": "output_4wLrhC",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_gttHEf": {
+ "name": "date",
+ "dataType": "date",
+ "returnType": "",
+ "value": null,
+ "next": "output_b4j43o",
+ "executedValue": "",
+ "attribute": "Today",
+ "source": "systemVar",
+ "schemaId": ""
+},
+     "output_hHpcVc": {
+ "name": "dateTime",
+ "dataType": "dateTime",
+ "returnType": "",
+ "value": null,
+ "next": "output_Z6DJ92",
+ "executedValue": "",
+ "attribute": "CurrentTime",
+ "source": "systemVar",
+ "schemaId": ""
+},
+     "output_i4M2Zr": {
+ "name": "String",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Value",
+ "next": "output_vN1w9v",
+ "executedValue": "Value",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_ijxTJv": {
+ "name": "dateTime",
+ "dataType": "dateTime",
+ "returnType": "",
+ "value": "2026-08-06T15:31:52+05:30",
+ "next": "output_LhNMwp",
+ "executedValue": "2026-08-06T15:31:52+05:30",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_oOFKQm": {
+ "name": "String",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Value",
+ "next": "output_LfX6ph",
+ "executedValue": "Value",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_ou7kOU": {
+ "name": "String",
+ "dataType": "string",
+ "returnType": "",
+ "value": "addedAFterDeleted",
+ "next": "output_tKF6fI",
+ "executedValue": "addedAFterDeleted",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_p4tu1k": {
+ "name": "date",
+ "dataType": "date",
+ "returnType": "",
+ "value": "2026-08-06",
+ "next": "output_Q55p1b",
+ "executedValue": "2026-08-06",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_rLZVUd": {
+ "name": "bool",
+ "dataType": "boolean",
+ "returnType": "",
+ "value": true,
+ "next": "output_ZIAT00",
+ "executedValue": true,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_rPVweQ": {
+ "name": "jsCode",
+ "dataType": "jsFormula",
+ "returnType": "string",
+ "value": "var a=\"asd\";a;",
+ "next": "",
+ "executedValue": "asd",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_sYuAi0": {
+ "name": "list",
+ "dataType": "list",
+ "returnType": "",
+ "value": [],
+ "next": "output_Zgt3WJ",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_tKF6fI": {
+ "name": "numeric",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 0,
+ "next": "output_FGBYUV",
+ "executedValue": 0,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_v01RVM": {
+ "name": "numeric",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 0,
+ "next": "output_YJZV8Y",
+ "executedValue": 0,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_vN1w9v": {
+ "name": "numeric",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 0,
+ "next": "output_T4hOQx",
+ "executedValue": 0,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_xFgZ4r": {
+ "name": "jsCode",
+ "dataType": "jsFormula",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_xnim1A": {
+ "name": "bool",
+ "dataType": "boolean",
+ "returnType": "",
+ "value": true,
+ "next": "output_1Hur4U",
+ "executedValue": true,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_y1JyQH": {
+ "name": "String",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Value",
+ "next": "output_00iWPc",
+ "executedValue": "Value",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_zD9YeZ": {
+ "name": "jsCode",
+ "dataType": "jsFormula",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     "actionData_aded": {
+ "name": "aded",
+ "connectorId": "",
+ "entity": "rule",
+ "entityId": "78bfdf2f-2d7c-4298-8d19-2b2453025cea",
+ "pluginName": "",
+ "config": {
+  "query": ""
+ },
+ "input": {
+  "Age": {
+ "name": "Age",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "value": 230,
+ "sendNull": false,
+ "notSend": false
+},
+  "Date": {
+ "name": "Date",
+ "dataType": "date",
+ "source": "",
+ "attribute": "",
+ "value": "2026-08-06",
+ "sendNull": false,
+ "notSend": false
+},
+  "DateTime": {
+ "name": "DateTime",
+ "dataType": "dateTime",
+ "source": "",
+ "attribute": "",
+ "value": "2026-08-06T01:02:00+05:30",
+ "sendNull": false,
+ "notSend": false
+},
+  "ist": {
+ "name": "ist",
+ "dataType": "list",
+ "source": "",
+ "attribute": "",
+ "value": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "sendNull": false,
+ "notSend": false
+},
+  "json": {
+ "name": "json",
+ "dataType": "json",
+ "source": "",
+ "attribute": "",
+ "value": {
+  "Name": "das"
+ },
+ "sendNull": false,
+ "notSend": false
+},
+  "name": {
+ "name": "name",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "value": "asds",
+ "sendNull": false,
+ "notSend": false
+}
+ },
+ "next": ""
+}
+    },
+    "firstOutputData": "",
+    "firstActionNode": "actionData_aded"
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "c_3yq7d1": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "any",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_AoskGl",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_G7AAMj": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sw",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_Fr3xVO",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_jZNAXG"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_L5gxR4": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "any",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_uj2Uty",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_LRQdy2": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_NyjNn9",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_xAufmQ"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_aBpgpn": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_MU5o72",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_qxOdND"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_sHKmF9": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_KgYUo3",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_Igd9Ar"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_AoskGl": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_3yq7d1"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_Fr3xVO": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_G7AAMj"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_KgYUo3": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_sHKmF9"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_MU5o72": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_aBpgpn"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_NyjNn9": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_LRQdy2"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_uj2Uty": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_L5gxR4"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_Igd9Ar": {
+ "value": null,
+ "sourceType": "globalVar",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "xml",
+ "query": "",
+ "parent": "c_sHKmF9",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_jZNAXG": {
+ "value": "atulR",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "jsFormula",
+ "attribute": "",
+ "query": "var b = \"atulR\"\nb",
+ "parent": "c_G7AAMj",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": "string"
+},
+    "rhs_qxOdND": {
+ "value": "lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "c_aBpgpn",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_xAufmQ": {
+ "value": null,
+ "sourceType": "systemVar",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "MatchedResumeValue",
+ "query": "",
+ "parent": "c_LRQdy2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_zX98Nd": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "NameEd",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_zX98Nd"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_03": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "NameEd",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "NameEd",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "evaluteAll",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "7eaf03fa-d6fc-46ee-b257-6611e1732565",
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": true,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": "d"
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": {
+    "columnWidths": {
+ "4": 22,
+ "5": 29.8
+},
+    "resultColumnWidths": {
+ "5": 22
+}
+   }
+  },
+  "isDemo": false,
+  "warnings": [
+   "Dataset is attached in rule input but not used inside any condition or used only with Any operator."
+  ],
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-06T13:22:23.869437Z",
+   "updatedAt": "2026-08-10T05:06:07.790435Z",
+   "entityCommitId": "commit-fbcfd515-7d29-4051-94a3-e9c8c763ed26",
+   "entityType": "rule",
+   "entityId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+   "entityVersion": "draft",
+   "entityNodeId": "fsd",
+   "dependencyType": "variable",
+   "dependencyId": "ea149369-8c5d-494b-9daa-fdd67146c4ec",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-06T13:22:23.866753Z",
+   "updatedAt": "2026-08-10T05:06:07.789976Z",
+   "entityCommitId": "commit-fbcfd515-7d29-4051-94a3-e9c8c763ed26",
+   "entityType": "rule",
+   "entityId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+   "entityVersion": "draft",
+   "entityNodeId": "NameGlobal",
+   "dependencyType": "variable",
+   "dependencyId": "075e5f74-41f1-4d73-9689-8ca328cdc826",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-06T13:22:23.868431Z",
+   "updatedAt": "2026-08-10T05:06:07.789433Z",
+   "entityCommitId": "commit-fbcfd515-7d29-4051-94a3-e9c8c763ed26",
+   "entityType": "rule",
+   "entityId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+   "entityVersion": "draft",
+   "entityNodeId": "globalDate",
+   "dependencyType": "variable",
+   "dependencyId": "e88f7737-5cd4-4fcf-baaf-2d57cca95d11",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-06T13:22:23.867843Z",
+   "updatedAt": "2026-08-10T05:06:07.788924Z",
+   "entityCommitId": "commit-fbcfd515-7d29-4051-94a3-e9c8c763ed26",
+   "entityType": "rule",
+   "entityId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+   "entityVersion": "draft",
+   "entityNodeId": "xml",
+   "dependencyType": "variable",
+   "dependencyId": "d8c536be-c6a2-4cea-b970-9118917bbcbf",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-06T13:22:23.867306Z",
+   "updatedAt": "2026-08-10T05:06:07.788362Z",
+   "entityCommitId": "commit-fbcfd515-7d29-4051-94a3-e9c8c763ed26",
+   "entityType": "rule",
+   "entityId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+   "entityVersion": "draft",
+   "entityNodeId": "asd",
+   "dependencyType": "variable",
+   "dependencyId": "77ec29a8-e8bd-4e57-b7c4-949bf5a909e6",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-06T13:22:23.868913Z",
+   "updatedAt": "2026-08-10T05:06:07.787743Z",
+   "entityCommitId": "commit-fbcfd515-7d29-4051-94a3-e9c8c763ed26",
+   "entityType": "rule",
+   "entityId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+   "entityVersion": "draft",
+   "entityNodeId": "sdf",
+   "dependencyType": "variable",
+   "dependencyId": "0863d7c0-fe7b-4cb1-8869-0cbb91ff69be",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-06T13:22:29.074784Z",
+   "updatedAt": "2026-08-10T05:06:07.787141Z",
+   "entityCommitId": "commit-fbcfd515-7d29-4051-94a3-e9c8c763ed26",
+   "entityType": "rule",
+   "entityId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+   "entityVersion": "draft",
+   "entityNodeId": "then-actionData_aded",
+   "dependencyType": "rule",
+   "dependencyId": "78bfdf2f-2d7c-4298-8d19-2b2453025cea",
+   "dependencyVersion": "0.10"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-06T13:22:23.865711Z",
+   "updatedAt": "2026-08-10T05:06:07.786501Z",
+   "entityCommitId": "commit-fbcfd515-7d29-4051-94a3-e9c8c763ed26",
+   "entityType": "rule",
+   "entityId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+   "entityVersion": "draft",
+   "entityNodeId": "api",
+   "dependencyType": "connector",
+   "dependencyId": "978b6345-4b48-4dc3-a5ed-6aae40767916",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-06T13:22:23.864712Z",
+   "updatedAt": "2026-08-10T05:06:07.785555Z",
+   "entityCommitId": "commit-fbcfd515-7d29-4051-94a3-e9c8c763ed26",
+   "entityType": "rule",
+   "entityId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+   "entityVersion": "draft",
+   "entityNodeId": "dataSet",
+   "dependencyType": "dataSet",
+   "dependencyId": "7eaf03fa-d6fc-46ee-b257-6611e1732565",
+   "dependencyVersion": "live"
+  }
+ ]
+}

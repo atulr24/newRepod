@@ -1,0 +1,26 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-08-06T10:17:29.013Z",
+  "updatedAt": "2026-08-06T10:17:29.013Z",
+  "isDeleted": false,
+  "entityId": "349cdd3e-0d31-40b7-9a9f-1916110e7ac3",
+  "name": "Deals",
+  "moduleId": "477d622a-4f2f-4e7c-a991-151e10c0978a",
+  "dataType": "list",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": [
+     1,
+     2,
+     2,
+     3,
+     4,
+     5,
+     5
+    ]
+   }
+  ]
+ }
+}

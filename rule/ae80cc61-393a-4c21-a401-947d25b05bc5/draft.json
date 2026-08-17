@@ -1,0 +1,227 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2026-08-13T05:51:35.815Z",
+  "updatedAt": "2026-08-13T05:51:35.815Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "ae80cc61-393a-4c21-a401-947d25b05bc5",
+  "version": "draft",
+  "name": "asd12",
+  "commitId": "commit-1c8ed107-d7eb-41af-9420-aa36ce87541e",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-08-13 05:51:35",
+   "timeStamp": "2026-08-13T05:51:35.815799429Z"
+  },
+  "customInput": {
+   "Names": {
+ "name": "Names",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "FIRST_NAME",
+ "sourceType": "dataSet",
+ "executedValue": "Atul",
+ "config": null,
+ "value": "",
+ "next": "",
+ "previous": "claimnumber",
+ "schemaId": "f1e61555-a68c-4639-86ce-2a41b6329db6"
+},
+   "claimnumber": {
+ "name": "claimnumber",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 23,
+ "config": null,
+ "value": "",
+ "next": "Names",
+ "previous": "",
+ "schemaId": "0849cbe2-0cca-4726-8ac3-83e1c6da7252"
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    "rule_01": {
+ "nextId": "",
+ "prevId": "",
+ "firstOutputData": "",
+ "isEnabled": true,
+ "annotation": ""
+}
+   },
+   "properties": {
+    "rule_03": {
+ "nextId": "",
+ "prevId": "",
+ "type": "simpleCondition"
+}
+   },
+   "results": null,
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_03": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "Names",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "claimnumber",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "first",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "6c165dc6-a134-4e73-8028-a7b0b18d0ca4",
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": "d"
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Africa/Accra",
+   "dateFormat": "us",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-13T05:51:35.820473Z",
+   "updatedAt": "2026-08-13T05:51:35.820473Z",
+   "entityCommitId": "commit-1c8ed107-d7eb-41af-9420-aa36ce87541e",
+   "entityType": "rule",
+   "entityId": "ae80cc61-393a-4c21-a401-947d25b05bc5",
+   "entityVersion": "draft",
+   "entityNodeId": "dataSet",
+   "dependencyType": "dataSet",
+   "dependencyId": "6c165dc6-a134-4e73-8028-a7b0b18d0ca4",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-13T05:51:35.819886Z",
+   "updatedAt": "2026-08-13T05:51:35.819886Z",
+   "entityCommitId": "commit-1c8ed107-d7eb-41af-9420-aa36ce87541e",
+   "entityType": "rule",
+   "entityId": "ae80cc61-393a-4c21-a401-947d25b05bc5",
+   "entityVersion": "draft",
+   "entityNodeId": "ci-claimnumber",
+   "dependencyType": "module_schema",
+   "dependencyId": "0849cbe2-0cca-4726-8ac3-83e1c6da7252",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-13T05:51:35.819305Z",
+   "updatedAt": "2026-08-13T05:51:35.819305Z",
+   "entityCommitId": "commit-1c8ed107-d7eb-41af-9420-aa36ce87541e",
+   "entityType": "rule",
+   "entityId": "ae80cc61-393a-4c21-a401-947d25b05bc5",
+   "entityVersion": "draft",
+   "entityNodeId": "ci-Names",
+   "dependencyType": "module_schema",
+   "dependencyId": "f1e61555-a68c-4639-86ce-2a41b6329db6",
+   "dependencyVersion": "live"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2026-04-27T12:00:51.749Z",
+  "updatedAt": "2026-04-27T12:00:51.749Z",
+  "isDeleted": false,
+  "entityId": "0863d7c0-fe7b-4cb1-8869-0cbb91ff69be",
+  "name": "sdf",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "list",
+  "value": {
+   "data": [
+    1,
+    2
+   ],
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

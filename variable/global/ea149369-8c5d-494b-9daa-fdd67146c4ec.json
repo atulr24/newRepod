@@ -1,0 +1,22 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2026-04-27T12:01:21.073Z",
+  "updatedAt": "2026-04-27T12:01:21.073Z",
+  "isDeleted": false,
+  "entityId": "ea149369-8c5d-494b-9daa-fdd67146c4ec",
+  "name": "fsd",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "json",
+  "value": {
+   "data": {
+    "sdf": 1
+   },
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

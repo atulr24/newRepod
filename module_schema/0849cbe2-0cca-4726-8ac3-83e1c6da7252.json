@@ -1,0 +1,14 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-08-13T05:51:35.812Z",
+  "updatedAt": "2026-08-13T05:51:35.812Z",
+  "isDeleted": false,
+  "entityId": "0849cbe2-0cca-4726-8ac3-83e1c6da7252",
+  "name": "claimnumber",
+  "moduleId": "ec4a01ca-11c9-44a1-bd12-8cb902bf93ba",
+  "dataType": "numeric",
+  "usageType": "optional",
+  "options": null
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2026-08-06T07:02:23.255Z",
+  "updatedAt": "2026-08-06T07:02:23.255Z",
+  "isDeleted": false,
+  "entityId": "e88f7737-5cd4-4fcf-baaf-2d57cca95d11",
+  "name": "globalDate",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "date",
+  "value": {
+   "data": "2026-08-06",
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

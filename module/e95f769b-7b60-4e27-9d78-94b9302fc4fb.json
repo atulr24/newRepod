@@ -1,0 +1,11 @@
+{
+ "entityType": "module",
+ "data": {
+  "createdAt": "2026-08-13T06:05:06.715Z",
+  "updatedAt": "2026-08-13T06:05:06.715Z",
+  "isDeleted": false,
+  "entityId": "e95f769b-7b60-4e27-9d78-94b9302fc4fb",
+  "name": "SanityAL",
+  "description": ""
+ }
+}

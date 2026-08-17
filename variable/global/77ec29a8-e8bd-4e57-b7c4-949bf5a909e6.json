@@ -1,0 +1,20 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2026-04-27T08:51:35.698Z",
+  "updatedAt": "2026-04-27T08:51:35.698Z",
+  "isDeleted": false,
+  "entityId": "77ec29a8-e8bd-4e57-b7c4-949bf5a909e6",
+  "name": "asd",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "numeric",
+  "value": {
+   "data": 234567890,
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

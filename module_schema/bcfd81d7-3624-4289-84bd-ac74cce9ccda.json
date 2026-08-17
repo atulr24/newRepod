@@ -1,0 +1,23 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-08-10T08:06:49.757Z",
+  "updatedAt": "2026-08-10T08:06:49.757Z",
+  "isDeleted": false,
+  "entityId": "bcfd81d7-3624-4289-84bd-ac74cce9ccda",
+  "name": "LoNames",
+  "moduleId": "1db4b3b5-7b22-4ef1-bef6-3f9663790353",
+  "dataType": "list",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": [
+     "Atul",
+     "Raizada",
+     "LAstName",
+     "Whatever"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "googleai",
+ "data": {
+  "createdAt": "2026-08-06T10:14:32.192Z",
+  "updatedAt": "2026-08-06T10:14:56.791719Z",
+  "isDeleted": false,
+  "entityId": "82799fe2-3f75-49b5-ab83-aa967dd7e9f3",
+  "name": "goooglai",
+  "isDemo": false,
+  "category": "ai-provider",
+  "isSource": false,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

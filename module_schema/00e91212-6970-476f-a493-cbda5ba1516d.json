@@ -1,0 +1,33 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-08-13T06:05:06.754Z",
+  "updatedAt": "2026-08-13T06:05:06.754Z",
+  "isDeleted": false,
+  "entityId": "00e91212-6970-476f-a493-cbda5ba1516d",
+  "name": "Ages",
+  "moduleId": "e95f769b-7b60-4e27-9d78-94b9302fc4fb",
+  "dataType": "numeric",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": 1
+   },
+   {
+    "value": 2
+   },
+   {
+    "value": 3
+   },
+   {
+    "value": 4
+   },
+   {
+    "value": 5
+   },
+   {
+    "value": 6
+   }
+  ]
+ }
+}

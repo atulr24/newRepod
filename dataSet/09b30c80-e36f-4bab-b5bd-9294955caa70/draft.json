@@ -1,0 +1,88 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2026-08-13T06:05:06.744Z",
+  "updatedAt": "2026-08-13T06:05:06.744Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "09b30c80-e36f-4bab-b5bd-9294955caa70",
+  "version": "draft",
+  "name": "snfPvtKey",
+  "commitId": "commit-367a77f3-a6d6-4ff2-9885-7cb1ca0fe0f3",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-08-13 06:05:06",
+   "timeStamp": "2026-08-13T06:05:06.744759172Z"
+  },
+  "fields": {
+   "EMAIL": {
+ "ColumnName": "EMAIL",
+ "DataType": "string",
+ "Order": 2,
+ "ExecutedValue": null
+},
+   "EMP_ID": {
+ "ColumnName": "EMP_ID",
+ "DataType": "numeric",
+ "Order": 3,
+ "ExecutedValue": null
+},
+   "FIRST_NAME": {
+ "ColumnName": "FIRST_NAME",
+ "DataType": "string",
+ "Order": 4,
+ "ExecutedValue": null
+},
+   "HIRE_DATE": {
+ "ColumnName": "HIRE_DATE",
+ "DataType": "dateTime",
+ "Order": 5,
+ "ExecutedValue": null
+},
+   "LAST_NAME": {
+ "ColumnName": "LAST_NAME",
+ "DataType": "string",
+ "Order": 6,
+ "ExecutedValue": null
+},
+   "SALARY": {
+ "ColumnName": "SALARY",
+ "DataType": "numeric",
+ "Order": 1,
+ "ExecutedValue": null
+}
+  },
+  "description": "",
+  "query": "select * from PUBLIC.EMPLOYEES;",
+  "params": null,
+  "connectorId": "cf14595f-6b56-4741-b29c-f761aa986a42",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "Africa/Accra",
+   "dateFormat": "us"
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-08-13T06:05:06.747368Z",
+   "updatedAt": "2026-08-13T06:05:06.747368Z",
+   "entityCommitId": "commit-367a77f3-a6d6-4ff2-9885-7cb1ca0fe0f3",
+   "entityType": "dataSet",
+   "entityId": "09b30c80-e36f-4bab-b5bd-9294955caa70",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "cf14595f-6b56-4741-b29c-f761aa986a42",
+   "dependencyVersion": "live"
+  }
+ ]
+}

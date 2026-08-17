@@ -1,0 +1,97 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2026-08-06T10:15:09.931Z",
+  "updatedAt": "2026-08-06T10:15:27.597219Z",
+  "isDeleted": false,
+  "testedAt": "2026-08-06T10:15:22.27Z",
+  "publishedAt": "2026-08-06T10:15:27.59Z",
+  "entityId": "7eaf03fa-d6fc-46ee-b257-6611e1732565",
+  "version": "0.10",
+  "name": "pgDB",
+  "commitId": "commit-c01b19de-f758-46ee-b7ba-198a3a956ad6",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Created at 2026-08-06 10:15:09",
+   "description": "v1",
+   "timeStamp": "2026-08-06T10:15:27.59Z"
+  },
+  "fields": {
+   "Bday": {
+ "ColumnName": "Bday",
+ "DataType": "dateTime",
+ "Order": 3,
+ "ExecutedValue": "1996-04-15T00:00:00Z"
+},
+   "age": {
+ "ColumnName": "age",
+ "DataType": "numeric",
+ "Order": 4,
+ "ExecutedValue": 35
+},
+   "id": {
+ "ColumnName": "id",
+ "DataType": "numeric",
+ "Order": 5,
+ "ExecutedValue": 1234
+},
+   "isTrue": {
+ "ColumnName": "isTrue",
+ "DataType": "boolean",
+ "Order": 6,
+ "ExecutedValue": true
+},
+   "metadata": {
+ "ColumnName": "metadata",
+ "DataType": "json",
+ "Order": 7,
+ "ExecutedValue": {
+  "name": "Raizada"
+ }
+},
+   "name": {
+ "ColumnName": "name",
+ "DataType": "string",
+ "Order": 8,
+ "ExecutedValue": "Ravi Kumar"
+},
+   "scores": {
+ "ColumnName": "scores",
+ "DataType": "list",
+ "Order": 1,
+ "ExecutedValue": [
+  85,
+  92,
+  78
+ ]
+},
+   "tags": {
+ "ColumnName": "tags",
+ "DataType": "list",
+ "Order": 2,
+ "ExecutedValue": [
+  "cricket",
+  "travel"
+ ]
+}
+  },
+  "description": "",
+  "query": "select * from dummy_data1;",
+  "params": {
+   
+  },
+  "connectorId": "f2d7164a-41ab-4c3d-8e18-c1d28cbb94fe",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "us"
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2026-04-27T08:57:37.494Z",
+  "updatedAt": "2026-04-27T08:57:37.494Z",
+  "isDeleted": false,
+  "entityId": "075e5f74-41f1-4d73-9689-8ca328cdc826",
+  "name": "NameGlobal",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "string",
+  "value": {
+   "data": "Atul",
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

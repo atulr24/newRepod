@@ -1,0 +1,24 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-08-13T06:09:17.251Z",
+  "updatedAt": "2026-08-13T06:09:17.251Z",
+  "isDeleted": false,
+  "entityId": "4f3dd8a5-a68d-41b2-9970-16b3854a5a9c",
+  "name": "Dates",
+  "moduleId": "e95f769b-7b60-4e27-9d78-94b9302fc4fb",
+  "dataType": "date",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": "2026-11-11"
+   },
+   {
+    "value": "2026-11-12"
+   },
+   {
+    "value": "2026-12-07"
+   }
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2026-04-27T11:45:36.34Z",
+  "updatedAt": "2026-04-27T11:45:36.34Z",
+  "isDeleted": false,
+  "entityId": "d8c536be-c6a2-4cea-b970-9118917bbcbf",
+  "name": "xml",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "string",
+  "value": {
+   "data": "<xml>Atul</xml>",
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

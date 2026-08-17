@@ -1,0 +1,29 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-08-13T06:05:06.717Z",
+  "updatedAt": "2026-08-13T06:05:06.717Z",
+  "isDeleted": false,
+  "entityId": "71c06a3c-88d4-40ea-a021-a47537aaa421",
+  "name": "ListsOfList",
+  "moduleId": "e95f769b-7b60-4e27-9d78-94b9302fc4fb",
+  "dataType": "list",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": [
+     1,
+     2,
+     4
+    ]
+   },
+   {
+    "value": [
+     4,
+     5,
+     6
+    ]
+   }
+  ]
+ }
+}

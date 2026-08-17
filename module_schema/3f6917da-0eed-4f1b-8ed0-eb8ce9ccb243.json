@@ -1,0 +1,21 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-08-13T06:05:06.752Z",
+  "updatedAt": "2026-08-13T06:05:06.752Z",
+  "isDeleted": false,
+  "entityId": "3f6917da-0eed-4f1b-8ed0-eb8ce9ccb243",
+  "name": "Names",
+  "moduleId": "e95f769b-7b60-4e27-9d78-94b9302fc4fb",
+  "dataType": "string",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": "Atul"
+   },
+   {
+    "value": "Raizada"
+   }
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "entityType": "testcase",
+ "category": "workflow",
+ "isList": true,
+ "dataList": [
+  {
+   "createdAt": "2026-08-10T08:31:25.582Z",
+   "updatedAt": "2026-08-10T08:34:07.157734Z",
+   "isDeleted": false,
+   "entityId": "142c6ad0-096e-4dd1-9535-47d5e3913cda",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "List": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+},
+     "LoNames": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+},
+     "Name": {
+ "value": "asd"
+},
+     "json": {
+ "value": {
+  "ASd": 123
+ }
+}
+    }
+   },
+   "output": {
+    "output": {
+ "LoNames": [
+ 1,
+ 2,
+ 3
+],
+ "key_1": "staging",
+ "key_2": 0
+}
+   }
+  }
+ ]
+}

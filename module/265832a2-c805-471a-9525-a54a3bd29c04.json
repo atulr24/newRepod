@@ -1,0 +1,11 @@
+{
+ "entityType": "module",
+ "data": {
+  "createdAt": "2026-08-13T05:51:35.804Z",
+  "updatedAt": "2026-08-13T05:51:35.804Z",
+  "isDeleted": false,
+  "entityId": "265832a2-c805-471a-9525-a54a3bd29c04",
+  "name": "ListOfNames",
+  "description": ""
+ }
+}

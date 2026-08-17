@@ -1,0 +1,12 @@
+{
+ "entityType": "tag",
+ "data": {
+  "createdAt": "2026-08-10T11:48:19.992Z",
+  "updatedAt": "2026-08-10T11:48:19.992Z",
+  "isDeleted": false,
+  "entityId": "3cbb17ce-5b2e-4764-b638-4c51220f56bd",
+  "name": "NewTage",
+  "color": "#D3C0FF",
+  "type": "Product Line"
+ }
+}

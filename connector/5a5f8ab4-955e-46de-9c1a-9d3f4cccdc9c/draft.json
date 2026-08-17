@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "snowflake",
+ "data": {
+  "createdAt": "2026-08-13T06:05:39.979Z",
+  "updatedAt": "2026-08-13T12:12:57.880987Z",
+  "isDeleted": false,
+  "entityId": "5a5f8ab4-955e-46de-9c1a-9d3f4cccdc9c",
+  "name": "snfPAt",
+  "isDemo": false,
+  "category": "database",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": true
+ }
+}
