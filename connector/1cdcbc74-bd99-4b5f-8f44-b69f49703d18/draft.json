@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "mcpserver",
+ "data": {
+  "createdAt": "2026-09-01T10:34:39.623Z",
+  "updatedAt": "2026-09-01T10:34:44.351979Z",
+  "isDeleted": false,
+  "entityId": "1cdcbc74-bd99-4b5f-8f44-b69f49703d18",
+  "name": "sdfsdfsdf",
+  "isDemo": false,
+  "category": "api",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": false
+ }
+}

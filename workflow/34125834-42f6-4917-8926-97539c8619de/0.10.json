@@ -1,0 +1,399 @@
+{
+ "entityType": "workflow",
+ "live": true,
+ "data": {
+  "createdAt": "2026-09-01T08:23:18.601Z",
+  "updatedAt": "2026-09-01T08:26:00.116Z",
+  "isDeleted": false,
+  "testedAt": "2026-09-01T08:25:51.742Z",
+  "publishedAt": "2026-09-01T08:26:00.086Z",
+  "entityId": "34125834-42f6-4917-8926-97539c8619de",
+  "version": "0.10",
+  "name": "testMCPstagProd",
+  "commitId": "commit-082363e5-11e1-40d5-b52c-e96dc7bd1283",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-09-01 08:23:18",
+   "description": "v1",
+   "timeStamp": "2026-09-01T08:26:00.08Z"
+  },
+  "startNode": "n_O2iWEw",
+  "description": "",
+  "trigger": {
+   "apiNode": "1",
+   "cronNode": ""
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 600,
+     "y": 0
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": {
+      "authType": "private",
+      "cacheEnabled": false,
+      "cacheKeys": "",
+      "durationUnit": "d",
+      "durationValue": 0,
+      "isEnabled": true
+     },
+     "nodeType": "apiTrigger",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "Trigger",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "trigger",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 130
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_LlONCY",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_O2iWEw",
+    "type": "aiAgentNode",
+    "data": {
+     "input": {
+      "agentName": {
+ "value": "chat",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "formatMarkdown": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "message": {
+ "value": "list all available tools",
+ "executedValue": "list all available tools",
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "model": {
+ "value": "claude-sonnet-4-6",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "systemPrompt": {
+ "value": "You are a helpful AI assistant. Provide accurate, concise, and helpful responses.",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "executionTime": "6.79s",
+      "output": {
+ "processing_time": 6.70299999974668,
+ "ref_id": "a2ffe991-72a3-4bbf-b128-e408756a6177",
+ "response": "I don't have any external tools available in this conversation. I'm a standard text-based AI assistant without access to:\n\n- 🔍 **Web search**\n- 📁 **File system**\n- 🖥️ **Code execution**\n- 🗄️ **Databases**\n- 🌐 **APIs or external services**\n- 🖼️ **Image generation**\n- 📊 **Data analysis tools**\n\n## What I **Can** Do (Built-in Capabilities):\n\n- **Answer questions** on a wide range of topics\n- **Write & edit** text, essays, emails, etc.\n- **Explain concepts** in simple or technical terms\n- **Brainstorm ideas**\n- **Summarize** content you paste\n- **Write, review, or debug code**\n- **Math & logic** reasoning\n- **Translation** (multiple languages)\n- **Role-play / creative writing**\n\n---\n\nIf you're using a platform (like **ChatGPT**, **Claude**, **Copilot**, etc.) that has plugins or tools enabled, the available tools depend on your specific setup.\n\nWould you like help with anything specific? 😊"
+}
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "m",
+      "durationValue": 5,
+      "errorContinue": false,
+      "maxRetries": 0,
+      "maxTokens": 1000,
+      "metadataRequired": false,
+      "rowLimit": null,
+      "temperature": 1,
+      "timeout": 30,
+      "timeoutAsync": 30
+     },
+     "nodeType": "aiAgentNode",
+     "entity": "connector",
+     "entityId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+     "pluginName": "",
+     "status": "success",
+     "name": "CustomAIAgent",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "aiAgentNode",
+     "mcpServers": [
+      {
+       "entityId": "9a5963ce-33a6-4a76-bd5b-0add7820ee20"
+      }
+     ],
+     "testedAt": "2026-09-01T08:25:51.742Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_szPP8K",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_t3WlWJ",
+    "markerEnd": "",
+    "label": "",
+    "source": "1",
+    "target": "n_LlONCY",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_4WcfqR",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_O2iWEw",
+    "target": "n_szPP8K",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_bxUuub",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_LlONCY",
+    "target": "n_O2iWEw",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "auditIO": null,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "us",
+   "timeout": 0,
+   "timeoutAsync": 0
+  },
+  "comment": "",
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T08:24:37.115766Z",
+   "updatedAt": "2026-09-01T08:26:00.113006Z",
+   "entityCommitId": "commit-082363e5-11e1-40d5-b52c-e96dc7bd1283",
+   "entityType": "workflow",
+   "entityId": "34125834-42f6-4917-8926-97539c8619de",
+   "entityVersion": "0.10",
+   "entityNodeId": "n_O2iWEw",
+   "dependencyType": "connector",
+   "dependencyId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T08:24:37.114516Z",
+   "updatedAt": "2026-09-01T08:26:00.113006Z",
+   "entityCommitId": "commit-082363e5-11e1-40d5-b52c-e96dc7bd1283",
+   "entityType": "workflow",
+   "entityId": "34125834-42f6-4917-8926-97539c8619de",
+   "entityVersion": "0.10",
+   "entityNodeId": "n_O2iWEw-0",
+   "dependencyType": "connector",
+   "dependencyId": "9a5963ce-33a6-4a76-bd5b-0add7820ee20",
+   "dependencyVersion": "live"
+  }
+ ]
+}

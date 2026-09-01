@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "mcpserver",
+ "data": {
+  "createdAt": "2026-08-31T11:11:46.467Z",
+  "updatedAt": "2026-09-01T07:18:07.631167Z",
+  "isDeleted": false,
+  "entityId": "00336921-80cd-487d-94b2-fcbecd877c0c",
+  "name": "neonasd",
+  "isDemo": false,
+  "category": "api",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": false
+ }
+}

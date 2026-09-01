@@ -1,0 +1,584 @@
+{
+ "entityType": "workflow",
+ "live": true,
+ "data": {
+  "createdAt": "2026-09-01T08:23:18.601Z",
+  "updatedAt": "2026-09-01T10:06:07.25Z",
+  "isDeleted": false,
+  "testedAt": "2026-09-01T10:05:34.793Z",
+  "publishedAt": "2026-09-01T10:06:07.244Z",
+  "entityId": "34125834-42f6-4917-8926-97539c8619de",
+  "version": "0.30",
+  "name": "testMCPstagProd",
+  "commitId": "commit-eb689958-7762-452c-8683-fdfd6c011e3e",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Forked from 0.20",
+   "description": "v3",
+   "timeStamp": "2026-09-01T10:06:07.241Z"
+  },
+  "startNode": "n_CykKvE",
+  "description": "",
+  "trigger": {
+   "apiNode": "1",
+   "cronNode": ""
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 600,
+     "y": 0
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": {
+      "UserPrompt": {
+ "value": null,
+ "executedValue": "Create a new Neon project testFrmMcp3 . Find orgId yourself",
+ "name": "UserPrompt",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "UserPrompt": "Create a new Neon project testFrmMcp3 . Find orgId yourself"
+     },
+     "settings": {
+      "authType": "private",
+      "cacheEnabled": false,
+      "cacheKeys": "",
+      "durationUnit": "d",
+      "durationValue": 0,
+      "isEnabled": true
+     },
+     "nodeType": "apiTrigger",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "Trigger",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "trigger",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 130
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_LlONCY",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 410
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_qm54Cc",
+    "type": "responseNode",
+    "data": {
+     "input": {
+      "key_0": {
+ "value": null,
+ "executedValue": {
+  "processing_time": 20.627999998629093,
+  "ref_id": "5f5abbe8-30c5-46da-ac3d-b080a1ba9c1d",
+  "response": "## I'll find your organization ID first, then create the project!Found your organization! Now I'll create the project.Your new Neon project has been successfully created! 🎉 Here's a summary:\n\n| Detail | Value |\n|---|---|\n| **Project Name** | testFrmMcp3 |\n| **Project ID** | `nameless-bird-87537819` |\n| **Organization** | Atul (`org-orange-boat-25346361`) |\n| **Region** | AWS US East 1 |\n| **PostgreSQL Version** | 18 |\n| **Platform** | AWS |\n\nThe project is ready to use with a default branch and compute endpoint. Let me know if you'd like to do anything else with it!"
+ },
+ "name": "key_0",
+ "dataType": "json",
+ "source": "CustomAIAgent1",
+ "attribute": "output",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "output": {
+ "key_0": {
+ "processing_time": 18.45599999651313,
+ "ref_id": "759b68bc-b990-4094-99f6-4fa57419f4fb",
+ "response": "## I'll find your organization ID and create the project simultaneously — let me first get the org info!Found your organization! Now let me create the project **finatest** under it.✅ Project **finatest** has been successfully created! Here's a summary:\n\n| Detail | Value |\n|---|---|\n| **Project Name** | finatest |\n| **Project ID** | `shiny-silence-63725513` |\n| **Database** | `neondb` |\n| **Organization** | Atul (`org-orange-boat-25346361`) |\n| **Region** | AWS US East 1 |\n| **PostgreSQL Version** | 18 |\n| **Platform** | AWS |\n| **Branch** | Default (main) |\n\nThe project is live and ready to use! Would you like me to get the connection string or do anything else with this project?"
+}
+}
+     },
+     "settings": {
+      "errorContinue": false,
+      "timeout": 10,
+      "timeoutAsync": 20
+     },
+     "nodeType": "responseNode",
+     "entity": "responseNode",
+     "entityId": "n_qm54Cc",
+     "pluginName": "",
+     "status": "success",
+     "name": "Response",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "response",
+     "mcpServers": null,
+     "testedAt": "2026-09-01T10:05:34.793Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 540
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_YrhVZO",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_CykKvE",
+    "type": "aiAgentNode",
+    "data": {
+     "input": {
+      "agentName": {
+ "value": "chat",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "formatMarkdown": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "boolean",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "message": {
+ "value": null,
+ "executedValue": "ginf",
+ "name": "",
+ "dataType": "string",
+ "source": "Trigger",
+ "attribute": "UserPrompt",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "model": {
+ "value": "claude-sonnet-4-6",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "systemPrompt": {
+ "value": "You are a helpful AI assistant. Provide accurate, concise, and helpful responses.",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "executionTime": "18.81s",
+      "output": {
+ "processing_time": 18.45599999651313,
+ "ref_id": "759b68bc-b990-4094-99f6-4fa57419f4fb",
+ "response": "## I'll find your organization ID and create the project simultaneously — let me first get the org info!Found your organization! Now let me create the project **finatest** under it.✅ Project **finatest** has been successfully created! Here's a summary:\n\n| Detail | Value |\n|---|---|\n| **Project Name** | finatest |\n| **Project ID** | `shiny-silence-63725513` |\n| **Database** | `neondb` |\n| **Organization** | Atul (`org-orange-boat-25346361`) |\n| **Region** | AWS US East 1 |\n| **PostgreSQL Version** | 18 |\n| **Platform** | AWS |\n| **Branch** | Default (main) |\n\nThe project is live and ready to use! Would you like me to get the connection string or do anything else with this project?"
+}
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "m",
+      "durationValue": 5,
+      "errorContinue": false,
+      "maxRetries": 0,
+      "maxTokens": 1000,
+      "metadataRequired": false,
+      "rowLimit": null,
+      "temperature": 1,
+      "timeout": 30,
+      "timeoutAsync": 30
+     },
+     "nodeType": "aiAgentNode",
+     "entity": "connector",
+     "entityId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+     "pluginName": "",
+     "status": "success",
+     "name": "CustomAIAgent1",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "aiAgentNode",
+     "mcpServers": [
+      {
+       "entityId": "00336921-80cd-487d-94b2-fcbecd877c0c"
+      },
+      {
+       "entityId": "2629a340-368d-4879-a094-93d6c7c8898a"
+      }
+     ],
+     "testedAt": "2026-09-01T10:05:34.793Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_OWqmBY",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_t3WlWJ",
+    "markerEnd": "",
+    "label": "",
+    "source": "1",
+    "target": "n_LlONCY",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_InksK4",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_qm54Cc",
+    "target": "n_YrhVZO",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_qmJICg",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_OWqmBY",
+    "target": "n_qm54Cc",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_jkZzLe",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_CykKvE",
+    "target": "n_OWqmBY",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_ZAihDN",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_LlONCY",
+    "target": "n_CykKvE",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "auditIO": null,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "us",
+   "timeout": 0,
+   "timeoutAsync": 0
+  },
+  "comment": "",
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T09:57:16.950793Z",
+   "updatedAt": "2026-09-01T10:06:07.24844Z",
+   "entityCommitId": "commit-eb689958-7762-452c-8683-fdfd6c011e3e",
+   "entityType": "workflow",
+   "entityId": "34125834-42f6-4917-8926-97539c8619de",
+   "entityVersion": "0.30",
+   "entityNodeId": "n_CykKvE",
+   "dependencyType": "connector",
+   "dependencyId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T09:57:16.952662Z",
+   "updatedAt": "2026-09-01T10:06:07.24844Z",
+   "entityCommitId": "commit-eb689958-7762-452c-8683-fdfd6c011e3e",
+   "entityType": "workflow",
+   "entityId": "34125834-42f6-4917-8926-97539c8619de",
+   "entityVersion": "0.30",
+   "entityNodeId": "n_CykKvE-0",
+   "dependencyType": "connector",
+   "dependencyId": "00336921-80cd-487d-94b2-fcbecd877c0c",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T10:02:10.025619Z",
+   "updatedAt": "2026-09-01T10:06:07.24844Z",
+   "entityCommitId": "commit-eb689958-7762-452c-8683-fdfd6c011e3e",
+   "entityType": "workflow",
+   "entityId": "34125834-42f6-4917-8926-97539c8619de",
+   "entityVersion": "0.30",
+   "entityNodeId": "n_CykKvE-1",
+   "dependencyType": "connector",
+   "dependencyId": "2629a340-368d-4879-a094-93d6c7c8898a",
+   "dependencyVersion": "live"
+  }
+ ]
+}

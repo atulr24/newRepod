@@ -1,0 +1,449 @@
+{
+ "entityType": "workflow",
+ "live": true,
+ "data": {
+  "createdAt": "2026-09-01T08:23:18.601Z",
+  "updatedAt": "2026-09-01T08:59:32.74Z",
+  "isDeleted": false,
+  "testedAt": "2026-09-01T08:59:22.635Z",
+  "publishedAt": "2026-09-01T08:59:32.734Z",
+  "entityId": "34125834-42f6-4917-8926-97539c8619de",
+  "version": "0.20",
+  "name": "testMCPstagProd",
+  "commitId": "commit-0aa64604-4fc5-474d-9b7a-3eb39fb05da9",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Forked from 0.10",
+   "description": "v2",
+   "timeStamp": "2026-09-01T08:59:32.732Z"
+  },
+  "startNode": "n_O2iWEw",
+  "description": "",
+  "trigger": {
+   "apiNode": "1",
+   "cronNode": ""
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 480,
+     "y": 0
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": {
+      "UserPrompt": {
+ "value": null,
+ "executedValue": "Show available tools for deepwiki",
+ "name": "UserPrompt",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "UserPrompt": "Show available tools for deepwiki"
+     },
+     "settings": {
+      "authType": "private",
+      "cacheEnabled": false,
+      "cacheKeys": "",
+      "durationUnit": "d",
+      "durationValue": 0,
+      "isEnabled": true
+     },
+     "nodeType": "apiTrigger",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "Trigger",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "trigger",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 480,
+     "y": 130
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_LlONCY",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 480,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_O2iWEw",
+    "type": "aiAgentNode",
+    "data": {
+     "input": {
+      "agentName": {
+ "value": "chat",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "formatMarkdown": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "boolean",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "message": {
+ "value": null,
+ "executedValue": "Show available tools for connected mcp connector",
+ "name": "",
+ "dataType": "string",
+ "source": "Trigger",
+ "attribute": "UserPrompt",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "model": {
+ "value": "claude-sonnet-4-6",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "systemPrompt": {
+ "value": "You are a helpful AI assistant. Provide accurate, concise, and helpful responses.",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "executionTime": "8.41s",
+      "output": {
+ "metadata": {
+ "content_blocks": [
+ {
+  "text": "# DeepWiki Available Tools\n\nDeepWiki is an AI-powered documentation and codebase exploration tool. Here are the tools/features typically available:\n\n## 🔍 Core Tools\n\n| Tool | Description |\n|------|-------------|\n| **Search** | Search across repositories and documentation |\n| **Ask** | Ask natural language questions about a codebase |\n| **Wiki Generation** | Auto-generate wiki pages from code/repos |\n| **Code Exploration** | Navigate and understand code structure |\n\n## 📡 API / MCP Tools\n\nIf you're referring to **DeepWiki's MCP (Model Context Protocol)** tools:\n\n```\n- search_wiki        → Search DeepWiki content\n- get_page           → Retrieve a specific wiki page\n- list_repositories  → List available repositories\n- ask_question       → Query a repo with natural language\n```\n\n## ⚠️ Note\n\nI don't have real-time access to DeepWiki's current tool catalog. To see **live/accurate tools**:\n\n1. Visit **[deepwiki.com](https://deepwiki.com)**\n2. Check their **API documentation**\n3. Run in an MCP context:\n   ```\n   list_tools()\n   ```\n\n---\n\n**Are you asking about a specific context?**\n- 🔧 MCP integration?\n- 🌐 Web interface features?\n- 📦 API endpoints?\n\nLet me know and I can help further!",
+  "type": "text"
+ }
+],
+ "id": "msg_011CecSjednbkBsmP2otGfsK",
+ "message_id": "lc_run--01a05c31-abc1-76a1-9010-34aa14218c9b-0",
+ "model": "claude-sonnet-4-6",
+ "stop_reason": "end_turn",
+ "stop_sequence": null,
+ "usage": {
+ "cache_creation": {
+ "ephemeral_1h_input_tokens": 0,
+ "ephemeral_5m_input_tokens": 0
+},
+ "cache_creation_input_tokens": 0,
+ "cache_read_input_tokens": 0,
+ "inference_geo": "global",
+ "input_tokens": 33,
+ "output_tokens": 345,
+ "server_tool_use": null,
+ "service_tier": "standard"
+},
+ "usage_stats": null,
+ "validation_issues": true,
+ "validation_passed": []
+},
+ "processing_time": 8.358000000938773,
+ "ref_id": "8e96f09e-d747-47d1-b9b5-654d6a3baaf1",
+ "response": "# DeepWiki Available Tools\n\nDeepWiki is an AI-powered documentation and codebase exploration tool. Here are the tools/features typically available:\n\n## 🔍 Core Tools\n\n| Tool | Description |\n|------|-------------|\n| **Search** | Search across repositories and documentation |\n| **Ask** | Ask natural language questions about a codebase |\n| **Wiki Generation** | Auto-generate wiki pages from code/repos |\n| **Code Exploration** | Navigate and understand code structure |\n\n## 📡 API / MCP Tools\n\nIf you're referring to **DeepWiki's MCP (Model Context Protocol)** tools:\n\n```\n- search_wiki        → Search DeepWiki content\n- get_page           → Retrieve a specific wiki page\n- list_repositories  → List available repositories\n- ask_question       → Query a repo with natural language\n```\n\n## ⚠️ Note\n\nI don't have real-time access to DeepWiki's current tool catalog. To see **live/accurate tools**:\n\n1. Visit **[deepwiki.com](https://deepwiki.com)**\n2. Check their **API documentation**\n3. Run in an MCP context:\n   ```\n   list_tools()\n   ```\n\n---\n\n**Are you asking about a specific context?**\n- 🔧 MCP integration?\n- 🌐 Web interface features?\n- 📦 API endpoints?\n\nLet me know and I can help further!"
+}
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "m",
+      "durationValue": 5,
+      "errorContinue": false,
+      "maxRetries": 0,
+      "maxTokens": 1000,
+      "metadataRequired": true,
+      "rowLimit": null,
+      "temperature": 1,
+      "timeout": 30,
+      "timeoutAsync": 30
+     },
+     "nodeType": "aiAgentNode",
+     "entity": "connector",
+     "entityId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+     "pluginName": "",
+     "status": "success",
+     "name": "CustomAIAgent",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "aiAgentNode",
+     "mcpServers": [
+      {
+       "entityId": "9a5963ce-33a6-4a76-bd5b-0add7820ee20"
+      }
+     ],
+     "testedAt": "2026-09-01T08:59:22.635Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 480,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_szPP8K",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_t3WlWJ",
+    "markerEnd": "",
+    "label": "",
+    "source": "1",
+    "target": "n_LlONCY",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_4WcfqR",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_O2iWEw",
+    "target": "n_szPP8K",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_bxUuub",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_LlONCY",
+    "target": "n_O2iWEw",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "auditIO": null,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "us",
+   "timeout": 0,
+   "timeoutAsync": 0
+  },
+  "comment": "",
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T08:30:25.069067Z",
+   "updatedAt": "2026-09-01T08:59:32.738769Z",
+   "entityCommitId": "commit-0aa64604-4fc5-474d-9b7a-3eb39fb05da9",
+   "entityType": "workflow",
+   "entityId": "34125834-42f6-4917-8926-97539c8619de",
+   "entityVersion": "0.20",
+   "entityNodeId": "n_O2iWEw",
+   "dependencyType": "connector",
+   "dependencyId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T08:30:25.070101Z",
+   "updatedAt": "2026-09-01T08:59:32.738769Z",
+   "entityCommitId": "commit-0aa64604-4fc5-474d-9b7a-3eb39fb05da9",
+   "entityType": "workflow",
+   "entityId": "34125834-42f6-4917-8926-97539c8619de",
+   "entityVersion": "0.20",
+   "entityNodeId": "n_O2iWEw-0",
+   "dependencyType": "connector",
+   "dependencyId": "9a5963ce-33a6-4a76-bd5b-0add7820ee20",
+   "dependencyVersion": "live"
+  }
+ ]
+}

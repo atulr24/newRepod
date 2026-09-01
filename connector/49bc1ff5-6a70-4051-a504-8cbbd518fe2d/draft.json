@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "mcpserver",
+ "data": {
+  "createdAt": "2026-09-01T07:52:13.276Z",
+  "updatedAt": "2026-09-01T07:54:08.096661Z",
+  "isDeleted": false,
+  "entityId": "49bc1ff5-6a70-4051-a504-8cbbd518fe2d",
+  "name": "notion1",
+  "isDemo": false,
+  "category": "api",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": false
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "anthropic",
+ "data": {
+  "createdAt": "2026-08-31T08:50:11.009Z",
+  "updatedAt": "2026-08-31T08:50:11.009Z",
+  "isDeleted": false,
+  "entityId": "24a3d52e-7278-458d-9ec4-00c5340d7dca",
+  "name": "anthropicTest-1788166211003",
+  "isDemo": false,
+  "category": "ai-provider",
+  "isSource": false,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

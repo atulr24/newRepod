@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "mcpserver",
+ "data": {
+  "createdAt": "2026-08-31T11:12:48.14Z",
+  "updatedAt": "2026-08-31T11:13:07.995788Z",
+  "isDeleted": false,
+  "entityId": "1dc76b99-2dee-4264-83f6-9e8618661ce2",
+  "name": "asd123",
+  "isDemo": false,
+  "category": "api",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": false
+ }
+}

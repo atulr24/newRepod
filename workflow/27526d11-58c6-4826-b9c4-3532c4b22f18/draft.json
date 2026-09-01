@@ -1,0 +1,447 @@
+{
+ "entityType": "workflow",
+ "data": {
+  "createdAt": "2026-09-01T07:35:51.398Z",
+  "updatedAt": "2026-09-01T08:00:47.369694Z",
+  "isDeleted": false,
+  "testedAt": "2026-09-01T08:00:47.369Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",
+  "version": "draft",
+  "name": "test123",
+  "commitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-09-01 07:35:51",
+   "timeStamp": "2026-09-01T07:35:51.398762627Z"
+  },
+  "startNode": "n_frSggW",
+  "description": "",
+  "trigger": {
+   "apiNode": "1",
+   "cronNode": ""
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 600,
+     "y": 0
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": {
+      "authType": "private",
+      "cacheEnabled": false,
+      "cacheKeys": "",
+      "durationUnit": "d",
+      "durationValue": 0,
+      "isEnabled": true
+     },
+     "nodeType": "apiTrigger",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "Trigger",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "trigger",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 130
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_85USHt",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_frSggW",
+    "type": "aiAgentNode",
+    "data": {
+     "input": {
+      "agentName": {
+ "value": "chat",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "browserTool": {
+ "value": false,
+ "executedValue": null,
+ "name": "",
+ "dataType": "boolean",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "formatMarkdown": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "boolean",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "message": {
+ "value": "list all available tools",
+ "executedValue": "list all available tools",
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "model": {
+ "value": "claude-sonnet-4-6",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "systemPrompt": {
+ "value": "You are a helpful AI assistant. Provide accurate, concise, and helpful responses.",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "executionTime": "10.39s",
+      "output": {
+ "processing_time": 10.316999999806285,
+ "ref_id": "20afec32-8243-47d6-beac-70c7fa6e1f4c",
+ "response": "I don't have any external tools, plugins, or functions available in this conversation. I'm a standard text-based AI assistant without access to:\n\n- 🔍 **Web search**\n- 📁 **File systems**\n- 💻 **Code execution**\n- 🗄️ **Databases**\n- 🌐 **APIs or external services**\n- 📷 **Image generation**\n- 🧮 **Calculators** (beyond reasoning)\n\n---\n\n## What I *Can* Do (Built-in Capabilities):\n\n- **Answer questions** based on my training data\n- **Write & edit** text, essays, emails, code, etc.\n- **Summarize** content you paste into the chat\n- **Analyze & explain** concepts\n- **Brainstorm** ideas\n- **Math reasoning** (step-by-step)\n- **Translate** languages\n- **Debug code**\n\n---\n\nIf you're using a platform that has **tool integrations** (like web browsing, file uploads, etc.), those would be listed in your interface settings.\n\nIs there something specific you're trying to accomplish? I can let you know if I can help! 😊"
+}
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "m",
+      "durationValue": 5,
+      "errorContinue": false,
+      "maxRetries": 0,
+      "maxTokens": 1000,
+      "metadataRequired": false,
+      "rowLimit": null,
+      "temperature": 1,
+      "timeout": 30,
+      "timeoutAsync": 30
+     },
+     "nodeType": "aiAgentNode",
+     "entity": "connector",
+     "entityId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+     "pluginName": "",
+     "status": "success",
+     "name": "CustomAIAgent",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "aiAgentNode",
+     "mcpServers": [
+      {
+       "entityId": "49bc1ff5-6a70-4051-a504-8cbbd518fe2d"
+      },
+      {
+       "entityId": "f0bfa4bb-481d-4195-9049-9cf55ad17e5d"
+      },
+      {
+       "entityId": "00336921-80cd-487d-94b2-fcbecd877c0c"
+      }
+     ],
+     "testedAt": "2026-09-01T08:00:47.369Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_7cvWJK",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_9Lrjn8",
+    "markerEnd": "",
+    "label": "",
+    "source": "1",
+    "target": "n_85USHt",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_9QvVIT",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_frSggW",
+    "target": "n_7cvWJK",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_Kw4ACz",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_85USHt",
+    "target": "n_frSggW",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "auditIO": null,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "us",
+   "timeout": 0,
+   "timeoutAsync": 0
+  },
+  "comment": "",
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T08:00:36.510393Z",
+   "updatedAt": "2026-09-01T08:00:36.510393Z",
+   "entityCommitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
+   "entityType": "workflow",
+   "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",
+   "entityVersion": "draft",
+   "entityNodeId": "n_frSggW-2",
+   "dependencyType": "connector",
+   "dependencyId": "00336921-80cd-487d-94b2-fcbecd877c0c",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T07:55:40.673993Z",
+   "updatedAt": "2026-09-01T08:00:36.509698Z",
+   "entityCommitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
+   "entityType": "workflow",
+   "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",
+   "entityVersion": "draft",
+   "entityNodeId": "n_frSggW-1",
+   "dependencyType": "connector",
+   "dependencyId": "f0bfa4bb-481d-4195-9049-9cf55ad17e5d",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T07:46:35.779813Z",
+   "updatedAt": "2026-09-01T08:00:36.508911Z",
+   "entityCommitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
+   "entityType": "workflow",
+   "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",
+   "entityVersion": "draft",
+   "entityNodeId": "n_frSggW-0",
+   "dependencyType": "connector",
+   "dependencyId": "49bc1ff5-6a70-4051-a504-8cbbd518fe2d",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T07:46:35.778119Z",
+   "updatedAt": "2026-09-01T08:00:36.507822Z",
+   "entityCommitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
+   "entityType": "workflow",
+   "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",
+   "entityVersion": "draft",
+   "entityNodeId": "n_frSggW",
+   "dependencyType": "connector",
+   "dependencyId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+   "dependencyVersion": "live"
+  }
+ ]
+}

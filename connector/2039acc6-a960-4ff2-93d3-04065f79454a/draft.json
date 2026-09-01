@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "mcpserver",
+ "data": {
+  "createdAt": "2026-08-31T09:57:18.422Z",
+  "updatedAt": "2026-08-31T09:58:02.015767Z",
+  "isDeleted": false,
+  "entityId": "2039acc6-a960-4ff2-93d3-04065f79454a",
+  "name": "gitMCP",
+  "isDemo": false,
+  "category": "api",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": false
+ }
+}

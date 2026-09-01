@@ -1,0 +1,693 @@
+{
+ "entityType": "workflow",
+ "data": {
+  "createdAt": "2026-08-31T11:37:42.337Z",
+  "updatedAt": "2026-09-01T07:22:20.720472Z",
+  "isDeleted": false,
+  "testedAt": "2026-09-01T07:22:20.719Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "c491f732-768a-4f5c-b15a-065527b51371",
+  "version": "draft",
+  "name": "newioq",
+  "commitId": "commit-474dc205-529f-4649-8b32-8d7f5b020437",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-08-31 11:37:42",
+   "timeStamp": "2026-08-31T11:37:42.337927966Z"
+  },
+  "startNode": "n_Zmpw2M",
+  "description": "",
+  "trigger": {
+   "apiNode": "1",
+   "cronNode": ""
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 600,
+     "y": 0
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": {
+      "authType": "private",
+      "cacheEnabled": false,
+      "cacheKeys": "",
+      "durationUnit": "d",
+      "durationValue": 0,
+      "isEnabled": true
+     },
+     "nodeType": "apiTrigger",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "Trigger",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "trigger",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 130
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_sSxnvB",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 410
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_uf88Pr",
+    "type": "aiAgentNode",
+    "data": {
+     "input": {
+      "agentName": {
+ "value": "chat",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "formatMarkdown": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "message": {
+ "value": "list all available tools and web serach cappabilites",
+ "executedValue": "list all available tools and web serach cappabilites",
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "model": {
+ "value": "claude-sonnet-4-6",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "systemPrompt": {
+ "value": "You are a helpful AI assistant. Provide accurate, concise, and helpful responses.",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "executionTime": "15.79s",
+      "output": {
+ "metadata": {
+ "content_blocks": [
+ {
+  "text": "Here's a comprehensive list of all available tools and their capabilities:\n\n---\n\n## 🗂️ Organization & Project Management\n| Tool | Description |\n|------|-------------|\n| `list_organizations` | List all organizations you belong to |\n| `list_projects` | List all Neon projects you own |\n| `describe_project` | Get detailed info about a specific project |\n| `create_project` | Create a new Neon project |\n| `update_project` | Update project settings |\n| `delete_project` | Delete a project and all its data |\n| `recover_project` | Recover a deleted project (within 7 days) |\n| `list_project_permissions` | List users with access to a project |\n| `list_project_members` | List organization members and their roles |\n| `list_operations` | List operations for a project |\n| `get_operation` | Get details for a specific operation |\n\n---\n\n## 🌿 Branch Management\n| Tool | Description |\n|------|-------------|\n| `list_branches` | List all branches for a project |\n| `get_branch` | Get details about a specific branch |\n| `create_branch` | Create a new branch |\n| `update_branch` | Update branch settings |\n| `delete_branch` | Delete a branch |\n| `get_default_branch` | Get the project's default branch |\n| `set_default_branch` | Set a branch as the default |\n| `reset_from_parent` | Reset a branch to its parent's HEAD |\n| `describe_branch` | Get a full tree view of all objects on a branch |\n| `compare_database_schema` | Compare schema between two branches |\n| `finalize_branch_restore` | Finalize a branch restore operation |\n\n---\n\n## 🗄️ Database & SQL\n| Tool | Description |\n|------|-------------|\n| `run_sql` | Execute a single SQL statement |\n| `run_sql_transaction` | Execute multiple SQL statements as a transaction |\n| `describe_table_schema` | Get column definitions and constraints for a table |\n| `get_database_tables` | List all tables in a database |\n| `prepare_database_migration` | Apply schema changes on a temp branch safely |\n| `complete_database_migration` | Apply or discard a prepared migration |\n| `explain_sql_statement` | Analyze query execution plan (EXPLAIN ANALYZE) |\n\n---\n\n## 🐘 PostgreSQL Roles & Databases\n| Tool | Description |\n|------|-------------|\n| `list_postgres_roles` | List all Postgres roles on a branch |\n| `get_postgres_role` | Get details about a specific role |\n| `create_postgres_role` | Create a new Postgres role |\n| `delete_postgres_role` | Delete a Postgres role |\n| `reset_postgres_role_password` | Reset a role's password |\n| `list_postgres_databases` | List all databases on a branch |\n| `get_postgres_database` | Get details about a specific database |\n| `create_postgres_database` | Create a new database |\n| `update_postgres_database` | Update a database |\n| `delete_postgres_database` | Delete a database |\n| `get_connection_string` | Get a PostgreSQL connection string |\n\n---\n\n## ⚡ Compute Endpoints\n| Tool | Description |\n|------|-------------|\n| `list_postgres_endpoints` | List all compute endpoints for a project |\n| `list_branch_computes` | List compute endpoints for a branch |\n| `get_postgres_endpoint` | Get details about a compute endpoint |\n| `create_postgres_endpoint` | Create a new compute endpoint |\n| `update_postgres_endpoint` | Update a compute endpoint |\n| `delete_postgres_endpoint` | Delete a compute endpoint |\n| `start_postgres_endpoint` | Start a compute endpoint |\n| `suspend_postgres_endpoint` | Suspend a compute endpoint |\n| `restart_postgres_endpoint` | Restart a compute endpoint |\n\n---\n\n## 📸 Snapshots & Backups\n| Tool | Description |\n|------|-------------|\n| `list_snapshots` | List all snapshots for a project |\n| `create_snapshot` | Create a",
+  "type": "text"
+ }
+],
+ "id": "msg_011CecKKyxuM9Fs6E4kLAmmh",
+ "message_id": "lc_run--01a05bd8-b91a-7e01-a5f4-d14dd03f8b56-0",
+ "model": "claude-sonnet-4-6",
+ "stop_reason": "max_tokens",
+ "stop_sequence": null,
+ "usage": {
+ "cache_creation": {
+ "ephemeral_1h_input_tokens": 0,
+ "ephemeral_5m_input_tokens": 0
+},
+ "cache_creation_input_tokens": 0,
+ "cache_read_input_tokens": 0,
+ "inference_geo": "global",
+ "input_tokens": 27928,
+ "iterations": null,
+ "output_tokens": 1000,
+ "server_tool_use": null,
+ "service_tier": "standard",
+ "speed": null
+},
+ "usage_stats": null,
+ "validation_issues": true,
+ "validation_passed": []
+},
+ "processing_time": 15.721999999135733,
+ "ref_id": "990e6ee3-fbfe-45f9-894c-b1ef5535bafe",
+ "response": "Here's a comprehensive list of all available tools and their capabilities:\n\n---\n\n## 🗂️ Organization & Project Management\n| Tool | Description |\n|------|-------------|\n| `list_organizations` | List all organizations you belong to |\n| `list_projects` | List all Neon projects you own |\n| `describe_project` | Get detailed info about a specific project |\n| `create_project` | Create a new Neon project |\n| `update_project` | Update project settings |\n| `delete_project` | Delete a project and all its data |\n| `recover_project` | Recover a deleted project (within 7 days) |\n| `list_project_permissions` | List users with access to a project |\n| `list_project_members` | List organization members and their roles |\n| `list_operations` | List operations for a project |\n| `get_operation` | Get details for a specific operation |\n\n---\n\n## 🌿 Branch Management\n| Tool | Description |\n|------|-------------|\n| `list_branches` | List all branches for a project |\n| `get_branch` | Get details about a specific branch |\n| `create_branch` | Create a new branch |\n| `update_branch` | Update branch settings |\n| `delete_branch` | Delete a branch |\n| `get_default_branch` | Get the project's default branch |\n| `set_default_branch` | Set a branch as the default |\n| `reset_from_parent` | Reset a branch to its parent's HEAD |\n| `describe_branch` | Get a full tree view of all objects on a branch |\n| `compare_database_schema` | Compare schema between two branches |\n| `finalize_branch_restore` | Finalize a branch restore operation |\n\n---\n\n## 🗄️ Database & SQL\n| Tool | Description |\n|------|-------------|\n| `run_sql` | Execute a single SQL statement |\n| `run_sql_transaction` | Execute multiple SQL statements as a transaction |\n| `describe_table_schema` | Get column definitions and constraints for a table |\n| `get_database_tables` | List all tables in a database |\n| `prepare_database_migration` | Apply schema changes on a temp branch safely |\n| `complete_database_migration` | Apply or discard a prepared migration |\n| `explain_sql_statement` | Analyze query execution plan (EXPLAIN ANALYZE) |\n\n---\n\n## 🐘 PostgreSQL Roles & Databases\n| Tool | Description |\n|------|-------------|\n| `list_postgres_roles` | List all Postgres roles on a branch |\n| `get_postgres_role` | Get details about a specific role |\n| `create_postgres_role` | Create a new Postgres role |\n| `delete_postgres_role` | Delete a Postgres role |\n| `reset_postgres_role_password` | Reset a role's password |\n| `list_postgres_databases` | List all databases on a branch |\n| `get_postgres_database` | Get details about a specific database |\n| `create_postgres_database` | Create a new database |\n| `update_postgres_database` | Update a database |\n| `delete_postgres_database` | Delete a database |\n| `get_connection_string` | Get a PostgreSQL connection string |\n\n---\n\n## ⚡ Compute Endpoints\n| Tool | Description |\n|------|-------------|\n| `list_postgres_endpoints` | List all compute endpoints for a project |\n| `list_branch_computes` | List compute endpoints for a branch |\n| `get_postgres_endpoint` | Get details about a compute endpoint |\n| `create_postgres_endpoint` | Create a new compute endpoint |\n| `update_postgres_endpoint` | Update a compute endpoint |\n| `delete_postgres_endpoint` | Delete a compute endpoint |\n| `start_postgres_endpoint` | Start a compute endpoint |\n| `suspend_postgres_endpoint` | Suspend a compute endpoint |\n| `restart_postgres_endpoint` | Restart a compute endpoint |\n\n---\n\n## 📸 Snapshots & Backups\n| Tool | Description |\n|------|-------------|\n| `list_snapshots` | List all snapshots for a project |\n| `create_snapshot` | Create a"
+}
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "m",
+      "durationValue": 5,
+      "errorContinue": false,
+      "maxRetries": 0,
+      "maxTokens": 1000,
+      "metadataRequired": false,
+      "rowLimit": null,
+      "temperature": 1,
+      "timeout": 30,
+      "timeoutAsync": 30
+     },
+     "nodeType": "aiAgentNode",
+     "entity": "connector",
+     "entityId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+     "pluginName": "",
+     "status": "success",
+     "name": "CustomAIAgent",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "aiAgentNode",
+     "mcpServers": [
+      {
+       "entityId": "00336921-80cd-487d-94b2-fcbecd877c0c"
+      }
+     ],
+     "testedAt": "2026-09-01T07:22:20.719Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 540
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_Yp2owi",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_Zmpw2M",
+    "type": "aiAgentNode",
+    "data": {
+     "input": {
+      "agentName": {
+ "value": "chat",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "formatMarkdown": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "boolean",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "message": {
+ "value": "helo",
+ "executedValue": "helo",
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "model": {
+ "value": "claude-sonnet-4-6",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "systemPrompt": {
+ "value": "You are a helpful AI assistant. Provide accurate, concise, and helpful responses.",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "executionTime": "1.81s",
+      "output": {
+ "metadata": {
+ "content_blocks": [
+ {
+  "text": "Hello! 👋 How are you doing? Is there something I can help you with today?",
+  "type": "text"
+ }
+],
+ "id": "msg_011CecKKp93r9F3Qccm6QpWB",
+ "message_id": "lc_run--01a05bd8-b1f9-73d0-9e02-061f32c6913f-0",
+ "model": "claude-sonnet-4-6",
+ "stop_reason": "end_turn",
+ "stop_sequence": null,
+ "usage": {
+ "cache_creation": {
+ "ephemeral_1h_input_tokens": 0,
+ "ephemeral_5m_input_tokens": 0
+},
+ "cache_creation_input_tokens": 0,
+ "cache_read_input_tokens": 0,
+ "inference_geo": "global",
+ "input_tokens": 28,
+ "output_tokens": 24,
+ "server_tool_use": null,
+ "service_tier": "standard"
+},
+ "usage_stats": null,
+ "validation_issues": true,
+ "validation_passed": []
+},
+ "processing_time": 1.7479999996721745,
+ "ref_id": "58dd00ed-46d0-4f03-b830-91c7527a8a6e",
+ "response": "Hello! 👋 How are you doing? Is there something I can help you with today?"
+}
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "m",
+      "durationValue": 5,
+      "errorContinue": false,
+      "maxRetries": 0,
+      "maxTokens": 1000,
+      "metadataRequired": false,
+      "rowLimit": null,
+      "temperature": 1,
+      "timeout": 30,
+      "timeoutAsync": 30
+     },
+     "nodeType": "aiAgentNode",
+     "entity": "connector",
+     "entityId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+     "pluginName": "",
+     "status": "success",
+     "name": "CustomAIAgent1",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "aiAgentNode",
+     "mcpServers": null,
+     "testedAt": "2026-09-01T07:22:20.719Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_gwqXuW",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_9Vk5iN",
+    "markerEnd": "",
+    "label": "",
+    "source": "1",
+    "target": "n_sSxnvB",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_LlPgKo",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_uf88Pr",
+    "target": "n_Yp2owi",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_rSXczi",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_gwqXuW",
+    "target": "n_uf88Pr",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_ZtxSQc",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_Zmpw2M",
+    "target": "n_gwqXuW",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_cXeOMr",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_sSxnvB",
+    "target": "n_Zmpw2M",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "auditIO": null,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "us",
+   "timeout": 0,
+   "timeoutAsync": 0
+  },
+  "comment": "",
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T07:17:31.23587Z",
+   "updatedAt": "2026-09-01T07:22:01.062648Z",
+   "entityCommitId": "commit-474dc205-529f-4649-8b32-8d7f5b020437",
+   "entityType": "workflow",
+   "entityId": "c491f732-768a-4f5c-b15a-065527b51371",
+   "entityVersion": "draft",
+   "entityNodeId": "n_Zmpw2M",
+   "dependencyType": "connector",
+   "dependencyId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T07:16:06.681504Z",
+   "updatedAt": "2026-09-01T07:22:01.061922Z",
+   "entityCommitId": "commit-474dc205-529f-4649-8b32-8d7f5b020437",
+   "entityType": "workflow",
+   "entityId": "c491f732-768a-4f5c-b15a-065527b51371",
+   "entityVersion": "draft",
+   "entityNodeId": "n_uf88Pr",
+   "dependencyType": "connector",
+   "dependencyId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-01T07:16:06.680599Z",
+   "updatedAt": "2026-09-01T07:22:01.060806Z",
+   "entityCommitId": "commit-474dc205-529f-4649-8b32-8d7f5b020437",
+   "entityType": "workflow",
+   "entityId": "c491f732-768a-4f5c-b15a-065527b51371",
+   "entityVersion": "draft",
+   "entityNodeId": "n_uf88Pr-0",
+   "dependencyType": "connector",
+   "dependencyId": "00336921-80cd-487d-94b2-fcbecd877c0c",
+   "dependencyVersion": "live"
+  }
+ ]
+}
