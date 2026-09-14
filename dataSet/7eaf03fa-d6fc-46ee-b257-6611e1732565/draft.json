@@ -3,51 +3,50 @@
  "category": "dataSet",
  "data": {
   "createdAt": "2026-08-06T10:15:09.931Z",
-  "updatedAt": "2026-08-06T10:15:27.597219Z",
+  "updatedAt": "2026-09-07T09:18:23.206026Z",
   "isDeleted": false,
-  "testedAt": "2026-08-06T10:15:22.27Z",
+  "testedAt": "2026-09-07T09:18:23.205Z",
   "publishedAt": "2026-08-06T10:15:27.59Z",
   "entityId": "7eaf03fa-d6fc-46ee-b257-6611e1732565",
-  "version": "0.10",
+  "version": "draft",
   "name": "pgDB",
-  "commitId": "commit-c01b19de-f758-46ee-b7ba-198a3a956ad6",
-  "status": "published",
-  "lastVersion": "draft",
-  "isLive": true,
+  "commitId": "commit-72d8e974-6f5a-4669-a86b-a69bfcb18514",
+  "status": "tested",
+  "lastVersion": "0.10",
+  "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-08-06 10:15:09",
-   "description": "v1",
-   "timeStamp": "2026-08-06T10:15:27.59Z"
+   "title": "Forked from 0.10",
+   "timeStamp": "2026-09-07T09:18:20.218357359Z"
   },
   "fields": {
    "Bday": {
  "ColumnName": "Bday",
  "DataType": "dateTime",
- "Order": 3,
+ "Order": 2,
  "ExecutedValue": "1996-04-15T00:00:00Z"
 },
    "age": {
  "ColumnName": "age",
  "DataType": "numeric",
- "Order": 4,
+ "Order": 3,
  "ExecutedValue": 35
 },
    "id": {
  "ColumnName": "id",
  "DataType": "numeric",
- "Order": 5,
+ "Order": 4,
  "ExecutedValue": 1234
 },
    "isTrue": {
  "ColumnName": "isTrue",
  "DataType": "boolean",
- "Order": 6,
+ "Order": 5,
  "ExecutedValue": true
 },
    "metadata": {
  "ColumnName": "metadata",
  "DataType": "json",
- "Order": 7,
+ "Order": 6,
  "ExecutedValue": {
   "name": "Raizada"
  }
@@ -55,13 +54,13 @@
    "name": {
  "ColumnName": "name",
  "DataType": "string",
- "Order": 8,
+ "Order": 7,
  "ExecutedValue": "Ravi Kumar"
 },
    "scores": {
  "ColumnName": "scores",
  "DataType": "list",
- "Order": 1,
+ "Order": 8,
  "ExecutedValue": [
   85,
   92,
@@ -71,7 +70,7 @@
    "tags": {
  "ColumnName": "tags",
  "DataType": "list",
- "Order": 2,
+ "Order": 1,
  "ExecutedValue": [
   "cricket",
   "travel"
@@ -93,5 +92,20 @@
    "timezone": "Asia/Calcutta",
    "dateFormat": "us"
   }
- }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-07T09:18:20.221498Z",
+   "updatedAt": "2026-09-07T09:18:20.221498Z",
+   "entityCommitId": "commit-72d8e974-6f5a-4669-a86b-a69bfcb18514",
+   "entityType": "dataSet",
+   "entityId": "7eaf03fa-d6fc-46ee-b257-6611e1732565",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "f2d7164a-41ab-4c3d-8e18-c1d28cbb94fe",
+   "dependencyVersion": "live"
+  }
+ ]
 }

@@ -2,22 +2,22 @@
  "entityType": "workflow",
  "data": {
   "createdAt": "2026-09-01T07:35:51.398Z",
-  "updatedAt": "2026-09-01T08:00:47.369694Z",
+  "updatedAt": "2026-09-07T12:10:29.258617Z",
   "isDeleted": false,
-  "testedAt": "2026-09-01T08:00:47.369Z",
+  "testedAt": "2026-09-07T12:10:29.258Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",
   "version": "draft",
   "name": "test123",
   "commitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
-  "status": "tested",
+  "status": "draft",
   "lastVersion": "",
   "isLive": false,
   "commitInfo": {
    "title": "Created at 2026-09-01 07:35:51",
    "timeStamp": "2026-09-01T07:35:51.398762627Z"
   },
-  "startNode": "n_frSggW",
+  "startNode": "n_j1EOqd",
   "description": "",
   "trigger": {
    "apiNode": "1",
@@ -110,7 +110,7 @@
    {
     "position": {
      "x": 600,
-     "y": 205
+     "y": 615
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -230,12 +230,198 @@
      },
      "output": null,
      "executedValue": {
+      "error": "oauth2: \"invalid_grant\" \"OAuth grant revoked\" (type: RetrieveError, retryable: true)",
+      "output": null
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "m",
+      "durationValue": 5,
+      "errorContinue": false,
+      "maxRetries": 0,
+      "maxTokens": 1000,
+      "metadataRequired": false,
+      "rowLimit": null,
+      "temperature": 1,
+      "timeout": 30,
+      "timeoutAsync": 30
+     },
+     "nodeType": "aiAgentNode",
+     "entity": "connector",
+     "entityId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+     "pluginName": "",
+     "status": "error",
+     "name": "CustomAIAgent",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "aiAgentNode",
+     "mcpServers": [
+      {
+       "entityId": "128a2e75-3819-4384-aced-cb12e4fc2319"
+      }
+     ],
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 745
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_7cvWJK",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 410
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_JJDHiu",
+    "type": "aiAgentNode",
+    "data": {
+     "input": {
+      "agentName": {
+ "value": "chat",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "formatMarkdown": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "message": {
+ "value": "get me hubspot users",
+ "executedValue": "get me hubspot users",
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "model": {
+ "value": "claude-sonnet-4-6",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "systemPrompt": {
+ "value": "You are a helpful AI assistant. Provide accurate, concise, and helpful responses.",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
       "error": "",
-      "executionTime": "10.39s",
+      "executionTime": "16.24s",
       "output": {
- "processing_time": 10.316999999806285,
- "ref_id": "20afec32-8243-47d6-beac-70c7fa6e1f4c",
- "response": "I don't have any external tools, plugins, or functions available in this conversation. I'm a standard text-based AI assistant without access to:\n\n- 🔍 **Web search**\n- 📁 **File systems**\n- 💻 **Code execution**\n- 🗄️ **Databases**\n- 🌐 **APIs or external services**\n- 📷 **Image generation**\n- 🧮 **Calculators** (beyond reasoning)\n\n---\n\n## What I *Can* Do (Built-in Capabilities):\n\n- **Answer questions** based on my training data\n- **Write & edit** text, essays, emails, code, etc.\n- **Summarize** content you paste into the chat\n- **Analyze & explain** concepts\n- **Brainstorm** ideas\n- **Math reasoning** (step-by-step)\n- **Translate** languages\n- **Debug code**\n\n---\n\nIf you're using a platform that has **tool integrations** (like web browsing, file uploads, etc.), those would be listed in your interface settings.\n\nIs there something specific you're trying to accomplish? I can let you know if I can help! 😊"
+ "processing_time": 14.688000001013279,
+ "ref_id": "04ec422c-80ff-4f43-aa0c-955a7a6dbbc7",
+ "response": "It looks like the HubSpot app needs to be **reconnected** with additional permissions in order to retrieve users. Here's what you need to do:\n\n1. **Disconnect** the HubSpot connector from your agent/integration.\n2. **Reconnect** it and make sure to **grant all the required permissions** when prompted.\n3. Once reconnected, try the request again.\n\nThe key missing permission for this request is **`crm.objects.users.read`**, along with several others that are needed for full functionality.\n\nWould you like help with anything else in the meantime?"
 }
      },
      "settings": {
@@ -256,7 +442,7 @@
      "entityId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
      "pluginName": "",
      "status": "success",
-     "name": "CustomAIAgent",
+     "name": "CustomAIAgent1",
      "rootId": "",
      "sourceId": null,
      "isMergeNode": false,
@@ -271,16 +457,201 @@
      "blockName": "aiAgentNode",
      "mcpServers": [
       {
-       "entityId": "49bc1ff5-6a70-4051-a504-8cbbd518fe2d"
-      },
-      {
-       "entityId": "f0bfa4bb-481d-4195-9049-9cf55ad17e5d"
-      },
-      {
-       "entityId": "00336921-80cd-487d-94b2-fcbecd877c0c"
+       "entityId": "7f27410c-f994-4af4-9914-d04f8f71d647"
       }
      ],
-     "testedAt": "2026-09-01T08:00:47.369Z"
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 540
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_cWbUuz",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "mcpServers": null,
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 600,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_j1EOqd",
+    "type": "aiAgentNode",
+    "data": {
+     "input": {
+      "agentName": {
+ "value": "chat",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "formatMarkdown": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "boolean",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "message": {
+ "value": "get me list of notion pages",
+ "executedValue": "get me list of notion pages",
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "model": {
+ "value": "claude-sonnet-4-6",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "systemPrompt": {
+ "value": "You are a helpful AI assistant. Provide accurate, concise, and helpful responses.",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "executionTime": "9.19s",
+      "output": {
+ "processing_time": 9.072000000625849,
+ "ref_id": "e4afd503-c0b3-458f-b0fb-14cf4aeaa5d3",
+ "response": "Here's a list of your Notion pages:\n\n### 🔒 Private Pages\n| # | Title | Icon |\n|---|-------|------|\n| 1 | [Welcome to Notion!](https://app.notion.com/p/2227ba4240408067b202e79fe170c272?pvs=204) | 👋 |\n| 2 | [Scratchpad](https://app.notion.com/p/2227ba42404080aaaea8f1626efb8a42?pvs=204) | ✏️ |\n| 3 | [1:1 notes](https://app.notion.com/p/2227ba42404080238401ebb2acc2e1b3?pvs=204) | 👥 |\n\n### 🌐 Shared Pages\nNo shared pages found.\n\nYou have **3 private pages** and **no shared pages** in your workspace. Would you like to open or do anything with any of these pages?"
+}
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "m",
+      "durationValue": 5,
+      "errorContinue": false,
+      "maxRetries": 0,
+      "maxTokens": 1000,
+      "metadataRequired": false,
+      "rowLimit": null,
+      "temperature": 1,
+      "timeout": 30,
+      "timeoutAsync": 30
+     },
+     "nodeType": "aiAgentNode",
+     "entity": "connector",
+     "entityId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+     "pluginName": "",
+     "status": "success",
+     "name": "CustomAIAgent2",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "aiAgentNode",
+     "mcpServers": [
+      {
+       "entityId": "128a2e75-3819-4384-aced-cb12e4fc2319"
+      }
+     ],
+     "testedAt": "2026-09-07T12:10:29.258Z"
     },
     "draggable": false
    },
@@ -292,7 +663,7 @@
     "style": null,
     "sourcePosition": "bottom",
     "targetPosition": "top",
-    "id": "n_7cvWJK",
+    "id": "n_odNgna",
     "type": "addNode",
     "data": {
      "input": null,
@@ -365,11 +736,83 @@
      "stroke": "gray",
      "strokeWidth": 1
     },
-    "id": "e_Kw4ACz",
+    "id": "e_hj288B",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_cWbUuz",
+    "target": "n_frSggW",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_Y6sI4t",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_JJDHiu",
+    "target": "n_cWbUuz",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_3A1M75",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_odNgna",
+    "target": "n_JJDHiu",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_HXCldG",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_j1EOqd",
+    "target": "n_odNgna",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_eyWLOn",
     "markerEnd": "",
     "label": "",
     "source": "n_85USHt",
-    "target": "n_frSggW",
+    "target": "n_j1EOqd",
     "data": {
      "edgeType": "then",
      "pathId": ""
@@ -393,47 +836,73 @@
  "dependencies": [
   {
    "isDeleted": false,
-   "createdAt": "2026-09-01T08:00:36.510393Z",
-   "updatedAt": "2026-09-01T08:00:36.510393Z",
+   "createdAt": "2026-09-07T12:08:46.197177Z",
+   "updatedAt": "2026-09-07T12:10:19.847052Z",
    "entityCommitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
    "entityType": "workflow",
    "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",
    "entityVersion": "draft",
-   "entityNodeId": "n_frSggW-2",
+   "entityNodeId": "n_JJDHiu-0",
    "dependencyType": "connector",
-   "dependencyId": "00336921-80cd-487d-94b2-fcbecd877c0c",
+   "dependencyId": "7f27410c-f994-4af4-9914-d04f8f71d647",
    "dependencyVersion": "live"
   },
   {
    "isDeleted": false,
-   "createdAt": "2026-09-01T07:55:40.673993Z",
-   "updatedAt": "2026-09-01T08:00:36.509698Z",
+   "createdAt": "2026-09-07T12:09:37.698589Z",
+   "updatedAt": "2026-09-07T12:10:19.846116Z",
    "entityCommitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
    "entityType": "workflow",
    "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",
    "entityVersion": "draft",
-   "entityNodeId": "n_frSggW-1",
+   "entityNodeId": "n_j1EOqd-0",
    "dependencyType": "connector",
-   "dependencyId": "f0bfa4bb-481d-4195-9049-9cf55ad17e5d",
+   "dependencyId": "128a2e75-3819-4384-aced-cb12e4fc2319",
    "dependencyVersion": "live"
   },
   {
    "isDeleted": false,
    "createdAt": "2026-09-01T07:46:35.779813Z",
-   "updatedAt": "2026-09-01T08:00:36.508911Z",
+   "updatedAt": "2026-09-07T12:10:19.84521Z",
    "entityCommitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
    "entityType": "workflow",
    "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",
    "entityVersion": "draft",
    "entityNodeId": "n_frSggW-0",
    "dependencyType": "connector",
-   "dependencyId": "49bc1ff5-6a70-4051-a504-8cbbd518fe2d",
+   "dependencyId": "128a2e75-3819-4384-aced-cb12e4fc2319",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-07T12:09:37.697163Z",
+   "updatedAt": "2026-09-07T12:10:19.844038Z",
+   "entityCommitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
+   "entityType": "workflow",
+   "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",
+   "entityVersion": "draft",
+   "entityNodeId": "n_j1EOqd",
+   "dependencyType": "connector",
+   "dependencyId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-07T12:08:46.195622Z",
+   "updatedAt": "2026-09-07T12:10:19.842694Z",
+   "entityCommitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
+   "entityType": "workflow",
+   "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",
+   "entityVersion": "draft",
+   "entityNodeId": "n_JJDHiu",
+   "dependencyType": "connector",
+   "dependencyId": "4db0386e-3ae8-4e9e-88c9-fd06adf8d521",
    "dependencyVersion": "live"
   },
   {
    "isDeleted": false,
    "createdAt": "2026-09-01T07:46:35.778119Z",
-   "updatedAt": "2026-09-01T08:00:36.507822Z",
+   "updatedAt": "2026-09-07T12:10:19.841327Z",
    "entityCommitId": "commit-8c535a8c-5711-4bdd-9619-963b05a42b9a",
    "entityType": "workflow",
    "entityId": "27526d11-58c6-4826-b9c4-3532c4b22f18",

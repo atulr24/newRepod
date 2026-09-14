@@ -1,0 +1,432 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "live": true,
+ "data": {
+  "createdAt": "2026-09-07T06:45:37.907Z",
+  "updatedAt": "2026-09-07T11:35:27.761Z",
+  "isDeleted": false,
+  "testedAt": "2026-09-07T11:33:55.164Z",
+  "publishedAt": "2026-09-07T11:35:27.758Z",
+  "entityId": "ea1ce2cc-e594-4c77-9467-1f4ffccb5e20",
+  "version": "0.10",
+  "name": "relativeDateIssue",
+  "commitId": "commit-4fe11220-fe7b-404e-b442-0dd31b00b720",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Created at 2026-09-07 06:45:37",
+   "description": "v1",
+   "timeStamp": "2026-09-07T11:35:27.757Z"
+  },
+  "customInput": {
+   "listOfJson": {
+ "name": "listOfJson",
+ "dataType": "list",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": [
+  {
+   "age": 29,
+   "birthDate": "1996-03-14",
+   "createdAt": "2026-09-01T10:15:30Z",
+   "id": "REC-001",
+   "isActive": true,
+   "name": "Alice Johnson",
+   "tags": [
+ "premium",
+ "verified",
+ "early-adopter"
+]
+  },
+  {
+   "age": 34,
+   "birthDate": "1991-07-22",
+   "createdAt": "2026-08-28T14:42:05Z",
+   "id": "REC-002",
+   "isActive": false,
+   "name": "Bob Singh",
+   "tags": [
+ "trial"
+]
+  },
+  {
+   "age": 41,
+   "birthDate": "1984-12-05",
+   "createdAt": "2026-09-05T09:00:00Z",
+   "id": "REC-003",
+   "isActive": true,
+   "name": "Priya Sharma",
+   "tags": [
+ "enterprise",
+ "admin"
+]
+  },
+  {
+   "age": 23,
+   "birthDate": "2002-01-18",
+   "createdAt": "2026-07-15T18:30:45Z",
+   "id": "REC-004",
+   "isActive": false,
+   "name": "David Lee",
+   "tags": []
+  },
+  {
+   "age": 37,
+   "birthDate": "1988-09-30",
+   "createdAt": "2026-09-06T22:11:59Z",
+   "id": "REC-005",
+   "isActive": true,
+   "name": "Fatima Noor",
+   "tags": [
+ "beta-tester",
+ "internal",
+ "qa"
+]
+  }
+ ],
+ "config": null,
+ "value": "",
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    "rule_01": {
+ "nextId": "",
+ "prevId": "",
+ "firstOutputData": "output_WOMh6q",
+ "isEnabled": true,
+ "annotation": ""
+}
+   },
+   "properties": {
+    "rule_03": {
+ "nextId": "",
+ "prevId": "",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "result_7On7TA": {
+ "nextId": "result_aqpdDr",
+ "prevId": "",
+ "dataType": "string",
+ "keyName": "result_1",
+ "schemaId": ""
+},
+    "result_aqpdDr": {
+ "nextId": "",
+ "prevId": "result_7On7TA",
+ "dataType": "list",
+ "keyName": "result_2",
+ "schemaId": ""
+}
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03",
+   "firstResult": "result_7On7TA",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "output_UL9AFF": {
+ "name": "result_2",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": null,
+ "attribute": "matchedItems",
+ "source": "condition_1",
+ "schemaId": ""
+},
+     "output_WOMh6q": {
+ "name": "result_1",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Value",
+ "next": "output_UL9AFF",
+ "executedValue": "Value",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "cc_L0P13M": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "bet",
+ "dataType": "date",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_KxXb9R",
+ "children": null,
+ "leftNode": [
+  "pc_SdonzL"
+ ],
+ "rightNode": [
+  "rhs_2aEHe8",
+  "rhs_hxIESz"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_KxXb9R": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_L0P13M"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "pc_SdonzL": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "date",
+ "nodeType": "params",
+ "attribute": "item.birthDate",
+ "query": "",
+ "parent": "cc_L0P13M",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rhsInner_n1yVb7": {
+ "value": 4,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_CucXJm",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rhs_2aEHe8": {
+ "value": {
+  "FUNC_NAME": "relativeDate",
+  "duration": "1",
+  "subOp": "next",
+  "unit": "d",
+  "value": "{{.globalVar.globalDate}}"
+ },
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "date",
+ "nodeType": "noCodeFunc",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_L0P13M",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rhs_CucXJm": {
+ "value": {
+  "aggOperator": "lte",
+  "compareNodeId": "rhsInner_n1yVb7",
+  "filterKeys": [
+ {
+  "label": "item",
+  "type": "(Entire Record)",
+  "value": "item"
+ }
+],
+  "secCompareNodeId": "",
+  "startNodeId": "gc_KxXb9R"
+ },
+ "sourceType": "",
+ "name": "condition_1",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_hxIESz": {
+ "value": {
+  "FUNC_NAME": "relativeDate",
+  "duration": "1",
+  "subOp": "next",
+  "unit": "d",
+  "value": "{{.systemVar.Today}}"
+ },
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "date",
+ "nodeType": "noCodeFunc",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_L0P13M",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "countFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_CucXJm"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_03": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "params",
+ "attribute": "listOfJson",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "listOfJson",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "first",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "us",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-07T11:08:17.512852Z",
+   "updatedAt": "2026-09-07T11:35:27.759991Z",
+   "entityCommitId": "commit-4fe11220-fe7b-404e-b442-0dd31b00b720",
+   "entityType": "rule",
+   "entityId": "ea1ce2cc-e594-4c77-9467-1f4ffccb5e20",
+   "entityVersion": "0.10",
+   "entityNodeId": "globalDate",
+   "dependencyType": "variable",
+   "dependencyId": "e88f7737-5cd4-4fcf-baaf-2d57cca95d11",
+   "dependencyVersion": "live"
+  }
+ ]
+}

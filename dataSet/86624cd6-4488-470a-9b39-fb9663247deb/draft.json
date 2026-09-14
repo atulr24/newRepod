@@ -1,0 +1,90 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2026-09-07T05:57:26.704Z",
+  "updatedAt": "2026-09-07T09:18:04.428057Z",
+  "isDeleted": false,
+  "testedAt": "2026-09-07T09:17:51.636Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "86624cd6-4488-470a-9b39-fb9663247deb",
+  "version": "draft",
+  "name": "mn",
+  "commitId": "commit-fe337976-b9a9-419b-a4d8-3949643ad4a4",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-09-07 05:57:26",
+   "timeStamp": "2026-09-07T05:57:26.704263634Z"
+  },
+  "fields": {
+   "created_at": {
+ "ColumnName": "created_at",
+ "DataType": "dateTime",
+ "Order": 1,
+ "ExecutedValue": "2026-05-19T11:27:40.5366667Z"
+},
+   "id": {
+ "ColumnName": "id",
+ "DataType": "numeric",
+ "Order": 2,
+ "ExecutedValue": 1
+},
+   "product_id": {
+ "ColumnName": "product_id",
+ "DataType": "numeric",
+ "Order": 3,
+ "ExecutedValue": 1
+},
+   "quantity": {
+ "ColumnName": "quantity",
+ "DataType": "numeric",
+ "Order": 4,
+ "ExecutedValue": 5
+},
+   "total_amount": {
+ "ColumnName": "total_amount",
+ "DataType": "numeric",
+ "Order": 5,
+ "ExecutedValue": 4999
+},
+   "user_id": {
+ "ColumnName": "user_id",
+ "DataType": "numeric",
+ "Order": 6,
+ "ExecutedValue": 1
+}
+  },
+  "description": "",
+  "query": "SELECT * FROM dbo.orders ;",
+  "params": {
+   
+  },
+  "connectorId": "f8898ec4-4ee5-4875-8280-26abf59bfc7b",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "us"
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-07T05:57:26.708062Z",
+   "updatedAt": "2026-09-07T09:18:04.430421Z",
+   "entityCommitId": "commit-fe337976-b9a9-419b-a4d8-3949643ad4a4",
+   "entityType": "dataSet",
+   "entityId": "86624cd6-4488-470a-9b39-fb9663247deb",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "f8898ec4-4ee5-4875-8280-26abf59bfc7b",
+   "dependencyVersion": "live"
+  }
+ ]
+}

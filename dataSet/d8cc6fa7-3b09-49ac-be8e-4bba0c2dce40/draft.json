@@ -1,0 +1,53 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2026-09-07T10:02:08.183Z",
+  "updatedAt": "2026-09-07T10:02:22.573567Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "d8cc6fa7-3b09-49ac-be8e-4bba0c2dce40",
+  "version": "draft",
+  "name": "dsfd",
+  "commitId": "commit-5e75d4c9-55e3-4c7d-9987-a37c18d6a684",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-09-07 10:02:08",
+   "timeStamp": "2026-09-07T10:02:08.183216505Z"
+  },
+  "fields": null,
+  "description": "",
+  "query": "db.comments.find({})",
+  "params": {
+   
+  },
+  "connectorId": "2b12fc1e-4c87-46e9-9ad2-c3a13d0f80f2",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "us"
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-07T10:02:08.188365Z",
+   "updatedAt": "2026-09-07T10:02:22.577392Z",
+   "entityCommitId": "commit-5e75d4c9-55e3-4c7d-9987-a37c18d6a684",
+   "entityType": "dataSet",
+   "entityId": "d8cc6fa7-3b09-49ac-be8e-4bba0c2dce40",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "2b12fc1e-4c87-46e9-9ad2-c3a13d0f80f2",
+   "dependencyVersion": "live"
+  }
+ ]
+}
