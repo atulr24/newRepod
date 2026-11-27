@@ -3,40 +3,22 @@
  "category": "ruleSet",
  "data": {
   "createdAt": "2026-08-06T12:36:57.953Z",
-  "updatedAt": "2026-08-10T08:06:13.708776Z",
+  "updatedAt": "2026-09-02T08:39:08.574314Z",
   "isDeleted": false,
-  "testedAt": "2026-08-10T08:06:06.25Z",
+  "testedAt": "2026-09-02T08:39:08.573Z",
   "publishedAt": "2026-08-10T08:06:13.703Z",
   "entityId": "aa479d60-226a-4b8e-9f98-d73dd7dfd29b",
-  "version": "0.20",
+  "version": "draft",
   "name": "rsn",
-  "commitId": "commit-2fa6fd49-cd75-4d8d-b395-d0f74f43453c",
-  "status": "published",
-  "lastVersion": "draft",
-  "isLive": true,
+  "commitId": "commit-64e6a1c0-f252-4b48-86ac-328989b2b4d1",
+  "status": "tested",
+  "lastVersion": "0.20",
+  "isLive": false,
   "commitInfo": {
-   "title": "Forked from 0.10",
-   "description": "v2",
-   "timeStamp": "2026-08-10T08:06:13.703Z"
+   "title": "Forked from 0.20",
+   "timeStamp": "2026-09-02T08:38:14.589848316Z"
   },
   "customInput": {
-   "Date": {
- "name": "Date",
- "dataType": "date",
- "isOptional": false,
- "isNullable": false,
- "isCaseSensitive": false,
- "attribute": "",
- "sourceType": "",
- "executedValue": "2026-04-28",
- "config": {
-  
- },
- "value": "",
- "next": "",
- "previous": "",
- "schemaId": ""
-},
    "Dated": {
  "name": "Dated",
  "dataType": "date",
@@ -152,23 +134,6 @@
  "previous": "",
  "schemaId": ""
 },
-   "bane": {
- "name": "bane",
- "dataType": "string",
- "isOptional": false,
- "isNullable": false,
- "isCaseSensitive": false,
- "attribute": "",
- "sourceType": "",
- "executedValue": "asd",
- "config": {
-  
- },
- "value": "",
- "next": "",
- "previous": "",
- "schemaId": ""
-},
    "booled": {
  "name": "booled",
  "dataType": "boolean",
@@ -239,23 +204,6 @@
  "next": "",
  "previous": "",
  "schemaId": ""
-},
-   "name": {
- "name": "name",
- "dataType": "string",
- "isOptional": false,
- "isNullable": false,
- "isCaseSensitive": false,
- "attribute": "",
- "sourceType": "",
- "executedValue": "Atul",
- "config": {
-  
- },
- "value": "",
- "next": "",
- "previous": "",
- "schemaId": ""
 }
   },
   "ruleChain": {
@@ -267,7 +215,7 @@
    "b5f19352-0ef0-4298-9568-b3523cdf6bc4": {
  "prevRuleId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
  "nextRuleId": "",
- "isEnabled": true
+ "isEnabled": false
 }
   },
   "decisionTable": {
@@ -299,7 +247,7 @@
   },
   "firstCustomInput": "",
   "firstRuleChain": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
-  "ruleSetPolicy": "first",
+  "ruleSetPolicy": "evaluteAll",
   "description": "nm",
   "policy": "",
   "comment": "",
@@ -337,5 +285,33 @@
   "isDemo": false,
   "warnings": [],
   "schemaVersion": "0.1.1"
- }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-02T08:38:14.597137Z",
+   "updatedAt": "2026-09-02T08:39:05.635634Z",
+   "entityCommitId": "commit-64e6a1c0-f252-4b48-86ac-328989b2b4d1",
+   "entityType": "rule",
+   "entityId": "aa479d60-226a-4b8e-9f98-d73dd7dfd29b",
+   "entityVersion": "draft",
+   "entityNodeId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+   "dependencyType": "rule",
+   "dependencyId": "4056e7bc-a54d-4a65-a60a-212f9c4a005c",
+   "dependencyVersion": "0.30"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-09-02T08:38:14.596042Z",
+   "updatedAt": "2026-09-02T08:39:05.634785Z",
+   "entityCommitId": "commit-64e6a1c0-f252-4b48-86ac-328989b2b4d1",
+   "entityType": "rule",
+   "entityId": "aa479d60-226a-4b8e-9f98-d73dd7dfd29b",
+   "entityVersion": "draft",
+   "entityNodeId": "b5f19352-0ef0-4298-9568-b3523cdf6bc4",
+   "dependencyType": "rule",
+   "dependencyId": "b5f19352-0ef0-4298-9568-b3523cdf6bc4",
+   "dependencyVersion": "0.10"
+  }
+ ]
 }

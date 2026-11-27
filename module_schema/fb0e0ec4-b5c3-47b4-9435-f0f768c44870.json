@@ -1,0 +1,45 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-11-26T07:20:20.369Z",
+  "updatedAt": "2026-11-26T07:20:20.369Z",
+  "isDeleted": false,
+  "entityId": "fb0e0ec4-b5c3-47b4-9435-f0f768c44870",
+  "name": "RISKBAND",
+  "moduleId": "7df76a7f-4b40-4ff1-bb34-ae727dd836e5",
+  "dataType": "string",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": "R1"
+   },
+   {
+    "value": "R2"
+   },
+   {
+    "value": "R3"
+   },
+   {
+    "value": "R4"
+   },
+   {
+    "value": "R5"
+   }
+  ]
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-11-26T07:20:20.372369Z",
+   "updatedAt": "2026-11-26T07:20:20.372369Z",
+   "entityCommitId": "",
+   "entityType": "module_schema",
+   "entityId": "fb0e0ec4-b5c3-47b4-9435-f0f768c44870",
+   "entityVersion": "live",
+   "entityNodeId": "module",
+   "dependencyType": "module",
+   "dependencyId": "7df76a7f-4b40-4ff1-bb34-ae727dd836e5",
+   "dependencyVersion": "live"
+  }
+ ]
+}

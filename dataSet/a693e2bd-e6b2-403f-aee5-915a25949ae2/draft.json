@@ -1,0 +1,97 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2026-09-07T09:45:27.148Z",
+  "updatedAt": "2026-09-07T09:50:42.239859Z",
+  "isDeleted": false,
+  "testedAt": "2026-09-07T09:45:57.725Z",
+  "publishedAt": "2026-09-07T09:50:42.229Z",
+  "entityId": "a693e2bd-e6b2-403f-aee5-915a25949ae2",
+  "version": "0.10",
+  "name": "pgdb8",
+  "commitId": "commit-cf5230aa-3204-429e-97d7-f7af3fff3dc0",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Created at 2026-09-07 09:45:27",
+   "description": "v1",
+   "timeStamp": "2026-09-07T09:50:42.227Z"
+  },
+  "fields": {
+   "Bday": {
+ "ColumnName": "Bday",
+ "DataType": "dateTime",
+ "Order": 2,
+ "ExecutedValue": "2020-01-02T00:00:00Z"
+},
+   "age": {
+ "ColumnName": "age",
+ "DataType": "numeric",
+ "Order": 3,
+ "ExecutedValue": 21
+},
+   "id": {
+ "ColumnName": "id",
+ "DataType": "numeric",
+ "Order": 4,
+ "ExecutedValue": 4001
+},
+   "isTrue": {
+ "ColumnName": "isTrue",
+ "DataType": "boolean",
+ "Order": 5,
+ "ExecutedValue": false
+},
+   "metadata": {
+ "ColumnName": "metadata",
+ "DataType": "json",
+ "Order": 6,
+ "ExecutedValue": {
+  "note": "test row"
+ }
+},
+   "name": {
+ "ColumnName": "name",
+ "DataType": "string",
+ "Order": 7,
+ "ExecutedValue": "user_4001"
+},
+   "scores": {
+ "ColumnName": "scores",
+ "DataType": "list",
+ "Order": 8,
+ "ExecutedValue": [
+  10,
+  20,
+  30
+ ]
+},
+   "tags": {
+ "ColumnName": "tags",
+ "DataType": "list",
+ "Order": 1,
+ "ExecutedValue": [
+  "tag1",
+  "tag2"
+ ]
+}
+  },
+  "description": "",
+  "query": "select * from dummy_data1",
+  "params": {
+   
+  },
+  "connectorId": "f2d7164a-41ab-4c3d-8e18-c1d28cbb94fe",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 40000,
+   "durationValue": 5,
+   "cacheEnabled": false,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "us"
+  }
+ }
+}
